@@ -1,0 +1,61 @@
+/* Accordion Button Styles */
+.accordion-button{
+  padding: .75rem 0.75rem;
+  padding-left: 0.5rem; 
+}
+.accordion-button .form-switch {
+  margin-top: 0.125rem;
+}
+
+/* Menu Toggle */
+.menu-collapsed {
+  display: none;
+}
+.menu-btn-collapsed {
+  position: absolute;
+  margin: 28px 10px;
+}
+
+/* Demo Styles */
+
+/* Accordion Button Style */
+.accordion-button:not(.collapsed){
+  color: var(--bs-dark);
+  font-weight: bold;
+  background-color: var(--bs-gray-200);
+}
+.accordion-button.collapsed{
+  color: var(--bs-dark);
+}
+.accordion-button.collapsed:hover{
+  color: var(--bs-dark);
+  background-color: var(--bs-gray-200);
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: var(--bs-accordion-btn-icon);
+}
+
+/* Form Label Font Weight */
+.form-check-label, .form-label, .col-form-label {
+  font-weight: 300;
+}
+
+/* Form Color Selector Style */
+.form-control-color {
+  padding: 0.175rem;
+  width: 2.5rem;
+  height: calc(1em + 0.75rem + 2px);
+  margin: 0.25rem 0.5rem 0rem 0rem;
+}
+
+/* Form Input Colors */
+.form-check-input:checked {
+  background-color: var(--bs-yellow);
+  border-color: var(--bs-yellow);
+}
+.form-range::-webkit-slider-thumb {
+  background: var(--bs-yellow);
+}
+.form-range::-moz-slider-thumb {
+  background: var(--bs-yellow);
+}

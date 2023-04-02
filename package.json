@@ -1,0 +1,36 @@
+{
+  "name": "photosynthesis-scheme",
+  "version": "1.0.0",
+  "description": "Generate schema of the photosynthetic apparatus like the z-scheme as an svg.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve",
+    "watch": "webpack --watch --config webpack.config.js",
+    "svg": "node insert-svg.js",
+    "build": "webpack --config webpack.config.js && webpack --config webpack.config.js --output-filename photosynthesis.min.js  --mode production"
+  },
+  "keywords": [
+    "photosynthesis",
+    "schema",
+    "svg"
+  ],
+  "author": "Sebastian Kuhlgert <sebastian.kuhlgert@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "@svgdotjs/svg.js": "^3.1.2"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.20.2",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^9.1.2",
+    "babel-preset-env": "^1.7.0",
+    "fs-jetpack": "^5.1.0",
+    "lodash": "^4.17.21",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.13.2"
+  }
+}
