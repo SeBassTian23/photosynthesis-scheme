@@ -1938,17 +1938,21 @@ __webpack_require__.r(__webpack_exports__);
  * Stroma
  */
 
-var el = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\">\n<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0\" y=\"0\" width=\"1400\" height=\"600\" viewBox=\"0, 0, 1400, 600\">\n  <defs>\n    <linearGradient id=\"Gradient_1\" gradientUnits=\"userSpaceOnUse\" x1=\"700\" y1=\"0\" x2=\"700\" y2=\"296.004\">\n      <stop offset=\"0.566\" stop-color=\"#000000\" stop-opacity=\"0\"/>\n      <stop offset=\"1\" stop-color=\"#0070C4\"/>\n    </linearGradient>\n  </defs>\n  <g id=\"stroma\" transform=\"translate(0, 0)\">\n    <text transform=\"matrix(1, 0, 0, 1, 1355.338, 279.014)\">\n      <tspan x=\"-34.518\" y=\"7.212\" font-family=\"ArialMT\" font-size=\"24\" fill=\"#000000\">stroma</tspan>\n    </text>\n    <path d=\"M-0,0 L1400,0 L1400,296.004 L-0,296.004 L-0,0 z\" fill=\"url(#Gradient_1)\" id=\"shape\" opacity=\"0.123\"/>\n  </g>\n</svg>";
+var el = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\">\n<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0\" y=\"0\" width=\"1400\" height=\"600\" viewBox=\"0, 0, 1400, 600\">\n  <defs>\n    <linearGradient id=\"Gradient_1\" gradientUnits=\"userSpaceOnUse\" x1=\"700\" y1=\"0\" x2=\"700\" y2=\"296.004\">\n      <stop offset=\"0.566\" stop-color=\"#FFFFFF\" stop-opacity=\"1\"/>\n      <stop offset=\"1\" stop-color=\"#0070C4\"/>\n    </linearGradient>\n  </defs>\n  <g id=\"stroma\" transform=\"translate(0, 0)\">\n    <text transform=\"matrix(1, 0, 0, 1, 1355.338, 279.014)\">\n      <tspan x=\"-34.518\" y=\"7.212\" font-family=\"ArialMT\" font-size=\"24\" fill=\"#000000\">stroma</tspan>\n    </text>\n    <path d=\"M-0,0 L1400,0 L1400,296.004 L-0,296.004 L-0,0 z\" fill=\"url(#Gradient_1)\" id=\"shape\" opacity=\"0.123\"/>\n  </g>\n</svg>";
 var stroma = function stroma() {
   var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
-    _ref$fill = _ref.fill,
-    fill = _ref$fill === void 0 ? 'transparent' : _ref$fill,
+    _ref$color = _ref.color,
+    color = _ref$color === void 0 ? '#0070C4' : _ref$color,
     _ref$label = _ref.label,
     label = _ref$label === void 0 ? 'stroma' : _ref$label,
     _ref$showLabel = _ref.showLabel,
     showLabel = _ref$showLabel === void 0 ? true : _ref$showLabel;
   var draw = SVG();
   draw.svg(el);
+  var defsGradient = draw.defs().find('#Gradient_1 stop');
+  defsGradient.each(function (stop) {
+    if (stop.attr('offset') == 1) stop.attr('stop-color', color);
+  });
   var tspan = draw.findOne('#stroma tspan');
   tspan.text(label);
   if (!showLabel) {
@@ -1973,6 +1977,11 @@ var settings = function settings() {
       "name": "showLabel",
       "value": true,
       "label": "Label"
+    }, {
+      "type": "color",
+      "name": "color",
+      "value": "#0070C4",
+      "label": "Background Gradient"
     }]
   };
 };
