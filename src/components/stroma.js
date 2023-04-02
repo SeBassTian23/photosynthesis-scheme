@@ -7,7 +7,7 @@ const el = `<?xml version="1.0" encoding="UTF-8"?>
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="1400" height="600" viewBox="0, 0, 1400, 600">
   <defs>
     <linearGradient id="Gradient_1" gradientUnits="userSpaceOnUse" x1="700" y1="0" x2="700" y2="296.004">
-      <stop offset="0.566" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="0.566" stop-color="#FFFFFF" stop-opacity="1"/>
       <stop offset="1" stop-color="#0070C4"/>
     </linearGradient>
   </defs>
@@ -20,10 +20,16 @@ const el = `<?xml version="1.0" encoding="UTF-8"?>
 </svg>`;
 
 
-const stroma = ({ fill = 'transparent', label = 'stroma', showLabel = true } = {}) => {
+const stroma = ({ color = '#0070C4', label = 'stroma', showLabel = true } = {}) => {
 
   let draw = SVG();
   draw.svg(el);
+
+  let defsGradient = draw.defs().find('#Gradient_1 stop');
+  defsGradient.each((stop) => {
+    if (stop.attr('offset') == 1)
+      stop.attr('stop-color', color);
+  })
 
   let tspan = draw.findOne('#stroma tspan');
   tspan.text(label);
@@ -46,6 +52,7 @@ export const settings = () => {
     "options": [
       { "type": "text", "name": "label", "value": "stroma", "label": "Label" },
       { "type": "check", "name": "showLabel", "value": true, "label": "Label" },
+      { "type": "color", "name": "color", "value": "#0070C4", "label": "Background Gradient" },
     ]
   }
 }
