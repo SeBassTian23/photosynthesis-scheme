@@ -1,7 +1,7 @@
 {
   "name": "photosynthesis-scheme",
   "version": "1.0.0",
-  "description": "Generate schema of the photosynthetic apparatus like the z-scheme as an svg.",
+  "description": "Generate a scheme of the photosynthetic machinery for presentations or slides.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,7 +12,7 @@
   },
   "keywords": [
     "photosynthesis",
-    "schema",
+    "scheme",
     "svg"
   ],
   "author": "Sebastian Kuhlgert <sebastian.kuhlgert@gmail.com>",
