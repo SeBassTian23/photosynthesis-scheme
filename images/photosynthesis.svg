@@ -1,17 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="1400" height="600" viewBox="0 0 1400 600"><defs>
     <linearGradient id="Gradient_1" gradientUnits="userSpaceOnUse" x1="700" y1="0" x2="700" y2="296.004">
-      <stop offset="0.566" stop-color="#000000" stop-opacity="0"></stop>
-      <stop offset="1" stop-color="#0070C4"></stop>
+      <stop offset="0.566" stop-color="#FFFFFF" stop-opacity="1"></stop>
+      <stop offset="1" stop-color="#0070c4"></stop>
     </linearGradient>
   </defs><g id="stroma" transform="translate(0, 0)">
     <text transform="matrix(1, 0, 0, 1, 1355.338, 279.014)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-      <tspan x="-34.518" y="7.212" font-family="ArialMT" font-size="24" fill="#000000">stroma</tspan>
+      <tspan x="-34.518" y="7.212" font-family="Arial,ArialMT" font-size="24" fill="#000000">stroma</tspan>
     </text>
     <path d="M-0,0 L1400,0 L1400,296.004 L-0,296.004 L-0,0 z" fill="url(#Gradient_1)" id="shape" opacity="0.123"></path>
   </g><g id="lumen" transform="translate(0, 0)">
     <path d="M-0,376.004 L1400,376.004 L1400,600 L-0,600 L-0,376.004 z" fill="#ffe5e5"></path>
     <text transform="matrix(1, 0, 0, 1, 1358.84, 392.945)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-      <tspan x="-30.04" y="7.212" font-family="ArialMT" font-size="24" fill="#000000">lumen</tspan>
+      <tspan x="-30.04" y="7.212" font-family="Arial,ArialMT" font-size="24" fill="#000000">lumen</tspan>
     </text>
   </g><g id="thylakoidmembrane" transform="translate(0, 0)">
     <path d="M-0,296.004 L1400,296.004 L1400,376.004 L-0,376.004 L-0,296.004 z" fill="#dbdbdb"></path>
@@ -69,12 +69,10 @@
         <path d="M1124.963,99.587 L1125.626,104.591 L1131.28,94.05 L1120.089,98.274 z" fill="#00BCFF" fill-opacity="1" stroke="#00BCFF" stroke-width="3" stroke-opacity="1"></path>
       </g>
       <text transform="matrix(1, 0, 0, 1, 1151.418, 85.829)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-        <tspan x="-13.729" y="8" font-family="ArialMT" font-size="24" fill="#000000">H</tspan>
-        <tspan x="3.604" y="8" font-family="LucidaGrande" font-size="24" fill="#000000">⁺</tspan>
+        <tspan x="-13.729" y="8" font-family="Arial,ArialMT" font-size="24" fill="#000000">H⁺</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 1030.685, 480.747)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-        <tspan x="-13.729" y="8" font-family="ArialMT" font-size="24" fill="#000000">H</tspan>
-        <tspan x="3.604" y="8" font-family="LucidaGrande" font-size="24" fill="#000000">⁺</tspan>
+        <tspan x="-13.729" y="8" font-family="Arial,ArialMT" font-size="24" fill="#000000">H⁺</tspan>
       </text>
     </g>
     <g id="stroma-ps-ii">
@@ -83,8 +81,7 @@
         <path d="M430.181,292.514 L425.149,292.917 L435.383,299.109 L431.745,287.714 z" fill="#00BCFF" fill-opacity="1" stroke="#00BCFF" stroke-width="3" stroke-opacity="1"></path>
       </g>
       <text transform="matrix(1, 0, 0, 1, 420.743, 237.847)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-        <tspan x="-13.729" y="8" font-family="ArialMT" font-size="24" fill="#000000">H</tspan>
-        <tspan x="3.604" y="8" font-family="LucidaGrande" font-size="24" fill="#000000">⁺</tspan>
+        <tspan x="-13.729" y="8" font-family="Arial,ArialMT" font-size="24" fill="#000000">H⁺</tspan>
       </text>
     </g>
     <g id="stroma-b6f">
@@ -93,8 +90,7 @@
         <path d="M612.084,293.514 L610.52,288.714 L606.882,300.109 L617.115,293.917 z" fill="#00BCFF" fill-opacity="1" stroke="#00BCFF" stroke-width="3" stroke-opacity="1"></path>
       </g>
       <text transform="matrix(1, 0, 0, 1, 631.035, 238.847)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-        <tspan x="-13.729" y="8" font-family="ArialMT" font-size="24" fill="#000000">H</tspan>
-        <tspan x="3.604" y="8" font-family="LucidaGrande" font-size="24" fill="#000000">⁺</tspan>
+        <tspan x="-13.729" y="8" font-family="Arial,ArialMT" font-size="24" fill="#000000">H⁺</tspan>
       </text>
     </g>
     <g id="b6f-lumen">
@@ -103,12 +99,40 @@
         <path d="M621.862,421.125 L617.513,423.689 L629.425,424.78 L621.168,416.126 z" fill="#00BCFF" fill-opacity="1" stroke="#00BCFF" stroke-width="3" stroke-opacity="1"></path>
       </g>
       <text transform="matrix(1, 0, 0, 1, 652.013, 433.79)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-        <tspan x="-13.729" y="8" font-family="ArialMT" font-size="24" fill="#000000">H</tspan>
-        <tspan x="3.604" y="8" font-family="LucidaGrande" font-size="24" fill="#000000">⁺</tspan>
+        <tspan x="-13.729" y="8" font-family="Arial,ArialMT" font-size="24" fill="#000000">H⁺</tspan>
+      </text>
+    </g>
+  </g><g id="quenching" transform="matrix(1,0,0,1,-0.37599945068359375,0)">
+    <g id="pmf">
+      <g>
+        <path d="M134.204,442.013 C167.869,484.817 173.944,489.253 214.047,506.28 C248.338,520.839 363.007,515.226 393.063,515.933" fill-opacity="0" stroke="#EF2D37" stroke-width="4" stroke-dasharray="12,4"></path>
+        <path d="M134.204,442.013 L139.956,441.572 L128.283,434.456 L132.398,447.492 z" fill="#EF2D37" fill-opacity="1" stroke="#EF2D37" stroke-width="4" stroke-opacity="1"></path>
+      </g>
+      <g>
+        <path d="M260.647,406.851 C273.605,452.142 303.979,490.827 345.682,509.239 C381.841,525.203 455.614,508.552 480.194,498.857" fill-opacity="0" stroke="#EF2D37" stroke-width="4" stroke-dasharray="12,4"></path>
+        <path d="M260.647,406.851 L266.082,408.783 L258.306,397.54 L256.772,411.125 z" fill="#EF2D37" fill-opacity="1" stroke="#EF2D37" stroke-width="4" stroke-opacity="1"></path>
+      </g>
+    </g>
+    <g id="qi">
+      <text transform="matrix(1, 0, 0, 1, 84.384, 180.776)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
+        <tspan x="-10.008" y="7.455" font-family="Arial,ArialMT" font-size="24" fill="#000000">qI</tspan>
+      </text>
+      <g>
+        <path d="M114.6,163.212 L144.5,139.069" fill-opacity="0" stroke="#EF2D37" stroke-width="4" stroke-dasharray="8,8"></path>
+        <path d="M114.6,163.212 L114.074,157.468 L107.131,169.244 L120.105,164.937 z" fill="#EF2D37" fill-opacity="1" stroke="#EF2D37" stroke-width="4" stroke-opacity="1"></path>
+      </g>
+    </g>
+    <g id="qe">
+      <g>
+        <path d="M205.418,405.643 L235.318,381.499" fill-opacity="0" stroke="#EF2D37" stroke-width="4" stroke-dasharray="8,8"></path>
+        <path d="M205.418,405.643 L204.892,399.898 L197.949,411.674 L210.923,407.367 z" fill="#EF2D37" fill-opacity="1" stroke="#EF2D37" stroke-width="4" stroke-opacity="1"></path>
+      </g>
+      <text transform="matrix(1, 0, 0, 1, 181.616, 428.793)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
+        <tspan x="-14.678" y="7.455" font-family="Arial,ArialMT" font-size="24" fill="#000000">qE</tspan>
       </text>
     </g>
   </g><g id="photosystem-ii" transform="matrix(1,0,0,1,0.3780059814453125,0)">
-    <g id="fluorescence">
+    <g id="fluorescence" opacity="0">
       <path d="M331.952,220.062 C336.305,226.505 338.122,223.592 339.949,227.289 C341.176,229.771 341.356,230.994 339.036,233.332 C337.741,234.529 336.758,236.616 337.815,238.755 C338.873,240.894 340.763,241.464 342.864,241.078 C344.608,240.757 346.856,241.262 347.914,243.401 C348.971,245.54 347.922,247.608 346.693,248.824 C345.274,250.227 344.416,252.107 345.473,254.246 C346.53,256.385 348.897,256.826 350.522,256.57 C352.248,256.298 354.514,256.754 355.571,258.893 C356.629,261.032 355.62,263.111 354.351,264.316 C352.79,265.797 352.073,267.599 353.131,269.738 C354.188,271.877 355.902,272.456 358.18,272.062 C359.916,271.761 362.172,272.246 363.229,274.385 C364.286,276.524 364.395,277.602 362.009,279.807 C360.714,281.004 359.731,283.091 360.788,285.23 C361.846,287.369 363.736,287.94 365.837,287.553 C367.581,287.233 369.829,287.738 370.887,289.877 C371.944,292.016 370.895,294.084 369.666,295.299 C368.247,296.702 367.389,298.583 368.446,300.722 C369.503,302.861 371.87,303.301 373.495,303.045 C375.221,302.773 377.487,303.23 378.544,305.369 C379.602,307.508 378.593,309.586 377.324,310.791 C375.763,312.273 375.046,314.075 376.104,316.214 C377.161,318.352 378.875,318.931 381.153,318.537 C382.889,318.236 385.145,318.721 386.202,320.86 C387.259,322.999 384.481,324.803 384.982,326.283" fill-opacity="0" stroke="#EF2D37" stroke-width="2"></path>
       <path d="M331.952,220.062 L336.262,220.433 L328.486,213.751 L329.952,223.899 z" fill="#EF2D37" fill-opacity="1" stroke="#EF2D37" stroke-width="2" stroke-opacity="1"></path>
     </g>
@@ -128,21 +152,17 @@
     </g>
     <g id="water-split">
       <text transform="matrix(1, 0, 0, 1, 352.14, 464.889)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-        <tspan x="-23.062" y="8.212" font-family="ArialMT" font-size="24" fill="#000000">H</tspan>
-        <tspan x="-5.73" y="8.212" font-family="LucidaGrande" font-size="24" fill="#000000">₂</tspan>
-        <tspan x="4.395" y="8.212" font-family="ArialMT" font-size="24" fill="#000000">O</tspan>
+        <tspan x="-23.062" y="8.212" font-family="Arial,ArialMT" font-size="24" fill="#000000">H₂O</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 421.816, 464.889)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-        <tspan x="-14.396" y="8.212" font-family="ArialMT" font-size="24" fill="#000000">O</tspan>
-        <tspan x="4.271" y="8.212" font-family="LucidaGrande" font-size="24" fill="#000000">₂</tspan>
+        <tspan x="-14.396" y="8.212" font-family="Arial,ArialMT" font-size="24" fill="#000000">O₂</tspan>
       </text>
       <g>
         <path d="M353.376,448.164 C353.363,428.717 367.707,412.942 385.413,412.93 C400.189,412.92 412.638,423.889 416.362,438.821" fill-opacity="0" stroke="#3A658B" stroke-width="3"></path>
         <path d="M416.362,438.821 L411.854,436.551 L417.381,447.159 L420.192,435.532 z" fill="#3A658B" fill-opacity="1" stroke="#3A658B" stroke-width="3" stroke-opacity="1"></path>
       </g>
       <text transform="matrix(1, 0, 0, 1, 503.931, 492.677)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-        <tspan x="-13.729" y="8" font-family="ArialMT" font-size="24" fill="#000000">H</tspan>
-        <tspan x="3.604" y="8" font-family="LucidaGrande" font-size="24" fill="#000000">⁺</tspan>
+        <tspan x="-13.729" y="8" font-family="Arial,ArialMT" font-size="24" fill="#000000">H⁺</tspan>
       </text>
     </g>
     <text transform="matrix(1, 0, 0, 1, 384.586, 374.195)" id="photosystem-ii-center" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
@@ -151,27 +171,26 @@
     </text>
     <g id="cofactors">
       <text transform="matrix(1, 0, 0, 1, 371.868, 391.909)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-        <tspan x="-5.657" y="1.5" font-family="ArialMT" font-size="10" fill="#000000">Y</tspan>
-        <tspan x="1.013" y="1.5" font-family="ArialMT" font-size="6" fill="#000000">z</tspan>
+        <tspan x="-5.657" y="1.5" font-family="Arial,ArialMT" font-size="10" fill="#000000">Y</tspan>
+        <tspan x="1.013" y="1.5" font-family="Arial,ArialMT" font-size="6" fill="#000000">z</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 398.541, 403.233)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-        <tspan x="-15.447" y="2.5" font-family="ArialMT" font-size="10" fill="#000000">CaMn</tspan>
-        <tspan x="11.228" y="2.5" font-family="LucidaGrande" font-size="10" fill="#000000">₄</tspan>
+        <tspan x="-15.447" y="2.5" font-family="Arial,ArialMT" font-size="10" fill="#000000">CaMn₄</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 391.413, 317.33)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-        <tspan x="-5.89" y="1.5" font-family="ArialMT" font-size="10" fill="#000000">Q</tspan>
-        <tspan x="1.888" y="1.5" font-family="ArialMT" font-size="6" fill="#000000">B</tspan>
+        <tspan x="-5.89" y="1.5" font-family="Arial,ArialMT" font-size="10" fill="#000000">Q</tspan>
+        <tspan x="1.888" y="1.5" font-family="Arial,ArialMT" font-size="6" fill="#000000">B</tspan>
       </text>
       <path d="M382.041,400.106 L377.867,396.458" fill-opacity="0" stroke="#000000" stroke-width="1"></path>
       <path d="M374.577,365.344 L367.782,356.562" fill-opacity="0" stroke="#000000" stroke-width="1"></path>
       <path d="M364.772,344.205 L367.782,330.704" fill-opacity="0" stroke="#000000" stroke-width="1"></path>
       <path d="M375.812,323.083 L384.362,319.051" fill-opacity="0" stroke="#000000" stroke-width="1"></path>
       <text transform="matrix(1, 0, 0, 1, 365.733, 325.923)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-        <tspan x="-5.89" y="1.5" font-family="ArialMT" font-size="10" fill="#000000">Q</tspan>
-        <tspan x="1.888" y="1.5" font-family="ArialMT" font-size="6" fill="#000000">A</tspan>
+        <tspan x="-5.89" y="1.5" font-family="Arial,ArialMT" font-size="10" fill="#000000">Q</tspan>
+        <tspan x="1.888" y="1.5" font-family="Arial,ArialMT" font-size="6" fill="#000000">A</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 369.095, 352.397)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-        <tspan x="-11.898" y="1.5" font-family="ArialMT" font-size="10" fill="#000000">Pheo</tspan>
+        <tspan x="-11.898" y="1.5" font-family="Arial,ArialMT" font-size="10" fill="#000000">Pheo</tspan>
       </text>
       <path d="M377.53,386.298 L383.103,381.544" fill-opacity="0" stroke="#000000" stroke-width="1"></path>
     </g>
@@ -181,7 +200,7 @@
     </g>
     <g id="label">
       <text transform="matrix(1, 0, 0, 1, 379.998, 574.538)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-        <tspan x="-69.445" y="4.5" font-family="ArialMT" font-size="21" fill="#000000">Photosystem II</tspan>
+        <tspan x="-69.445" y="4.5" font-family="Arial,ArialMT" font-size="21" fill="#000000">Photosystem II</tspan>
       </text>
     </g>
   </g><defs>
@@ -204,7 +223,7 @@
         <path d="M252.296,161.871 C238.719,161.871 227.713,137.221 227.713,106.813 C227.713,76.405 238.719,51.755 252.296,51.755 C265.872,51.755 276.879,76.405 276.879,106.813 C276.879,137.221 265.872,161.871 252.296,161.871 z" fill-opacity="0" stroke="#3B3838" stroke-width="1"></path>
       </g>
       <text transform="matrix(1, 0, 0, 1, 251.954, 140.33)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-        <tspan x="-8.948" y="4.5" font-family="ArialMT" font-size="14" fill="#000000">D1</tspan>
+        <tspan x="-8.948" y="4.5" font-family="Arial,ArialMT" font-size="14" fill="#000000">D1</tspan>
       </text>
     </g>
     <g id="antenna">
@@ -227,10 +246,10 @@
         <path d="M194.942,180.037 L195.274,185.796 L202.609,174.261 L189.498,178.129 z" fill="#983432" fill-opacity="1" stroke="#983432" stroke-width="4" stroke-opacity="1"></path>
       </g>
       <text transform="matrix(1, 0, 0, 1, 138.727, 196.734)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-        <tspan x="-25.938" y="4.5" font-family="ArialMT" font-size="14" fill="#000000">damage</tspan>
+        <tspan x="-25.938" y="4.5" font-family="Arial,ArialMT" font-size="14" fill="#000000">damage</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 414.208, 173.962)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-        <tspan x="-19.114" y="4.5" font-family="ArialMT" font-size="14" fill="#000000">repair</tspan>
+        <tspan x="-19.114" y="4.5" font-family="Arial,ArialMT" font-size="14" fill="#000000">repair</tspan>
       </text>
     </g>
     <g id="light" transform="matrix(1,0,0,1,0,0)">
@@ -243,8 +262,7 @@
       <path d="M519.983,354.984 L510.134,337.925 L519.983,320.865 L539.681,320.865 L549.53,337.925 L539.681,354.984 z" fill-opacity="0" stroke="#3B3838" stroke-width="1"></path>
     </g>
     <text transform="matrix(1, 0, 0, 1, 529.332, 390.225)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-      <tspan x="-45.271" y="5.689" font-family="ArialMT" font-size="21" fill="#000000">PQ/PQH</tspan>
-      <tspan x="36.412" y="5.689" font-family="LucidaGrande" font-size="21" fill="#000000">₂</tspan>
+      <tspan x="-45.271" y="5.689" font-family="Arial,ArialMT" font-size="21" fill="#000000">PQ/PQH₂</tspan>
     </text>
   </g><g id="cytochrome-b6f" transform="matrix(1,0,0,1,-0.48895263671875,0)">
     <g id="core">
@@ -260,49 +278,44 @@
     <g id="cofactors">
       <g id="b6l">
         <text transform="matrix(1, 0, 0, 1, 666.625, 340.175)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-          <tspan x="-2.781" y="1.5" font-family="ArialMT" font-size="10" fill="#000000">b</tspan>
+          <tspan x="-2.781" y="1.5" font-family="Arial,ArialMT" font-size="10" fill="#000000">b</tspan>
         </text>
         <text transform="matrix(1, 0, 0, 1, 670.266, 343.072)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-          <tspan x="-1.668" y="1" font-family="Arial-ItalicMT" font-size="6" fill="#000000">L</tspan>
+          <tspan x="-1.668" y="1" font-family="Arial,ArialMT" font-size="6" font-style="italic" fill="#000000">L</tspan>
         </text>
       </g>
       <text transform="matrix(1, 0, 0, 1, 648.547, 306.901)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-        <tspan x="-5.558" y="1.5" font-family="ArialMT" font-size="10" fill="#000000">Q</tspan>
-        <tspan x="2.221" y="1.5" font-family="ArialMT" font-size="6" fill="#000000">n</tspan>
+        <tspan x="-5.558" y="1.5" font-family="Arial,ArialMT" font-size="10" fill="#000000">Q</tspan>
+        <tspan x="2.221" y="1.5" font-family="Arial,ArialMT" font-size="6" fill="#000000">n</tspan>
       </text>
       <path d="M656.401,344.833 L661.727,340.305" fill-opacity="0" stroke="#000000" stroke-width="1"></path>
       <path d="M662.635,360.504 L657.061,355.749" fill-opacity="0" stroke="#000000" stroke-width="1"></path>
       <text transform="matrix(1, 0, 0, 1, 687.415, 389.241)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-        <tspan x="-1.389" y="1.5" font-family="Arial-ItalicMT" font-size="10" fill="#000000">f</tspan>
+        <tspan x="-1.389" y="1.5" font-family="Arial,ArialMT" font-size="10" font-style="italic" fill="#000000">f</tspan>
       </text>
       <path d="M684.843,383.195 L678.856,375.36" fill-opacity="0" stroke="#000000" stroke-width="1"></path>
       <text transform="matrix(1, 0, 0, 1, 669.694, 367.504)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-        <tspan x="-13.793" y="2.5" font-family="ArialMT" font-size="10" fill="#000000">Fe</tspan>
-        <tspan x="-2.123" y="2.5" font-family="LucidaGrande" font-size="10" fill="#000000">₂</tspan>
-        <tspan x="2.095" y="2.5" font-family="ArialMT" font-size="10" fill="#000000">S</tspan>
-        <tspan x="8.765" y="2.5" font-family="LucidaGrande" font-size="10" fill="#000000">₂</tspan>
+        <tspan x="-13.793" y="2.5" font-family="Arial,ArialMT" font-size="10" fill="#000000">Fe₂S₂</tspan>
       </text>
       <g id="b6h">
         <text transform="matrix(1, 0, 0, 1, 666.127, 314.582)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-          <tspan x="-2.781" y="1.5" font-family="ArialMT" font-size="10" fill="#000000">b</tspan>
+          <tspan x="-2.781" y="1.5" font-family="Arial,ArialMT" font-size="10" fill="#000000">b</tspan>
         </text>
         <text transform="matrix(1, 0, 0, 1, 670.266, 317.479)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-          <tspan x="-2.167" y="1" font-family="Arial-ItalicMT" font-size="6" fill="#000000">H</tspan>
+          <tspan x="-2.167" y="1" font-family="Arial,ArialMT" font-size="6" font-style="italic" fill="#000000">H</tspan>
         </text>
       </g>
       <path d="M667.23,330.916 L667.23,322.27" fill-opacity="0" stroke="#000000" stroke-width="1"></path>
       <text transform="matrix(1, 0, 0, 1, 650.529, 350.479)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-        <tspan x="-5.558" y="1.5" font-family="ArialMT" font-size="10" fill="#000000">Q</tspan>
-        <tspan x="2.221" y="1.5" font-family="ArialMT" font-size="6" fill="#000000">p</tspan>
+        <tspan x="-5.558" y="1.5" font-family="Arial,ArialMT" font-size="10" fill="#000000">Q</tspan>
+        <tspan x="2.221" y="1.5" font-family="Arial,ArialMT" font-size="6" fill="#000000">p</tspan>
       </text>
       <path d="M661.975,313.358 L656.401,308.603" fill-opacity="0" stroke="#000000" stroke-width="1"></path>
     </g>
     <g id="label">
       <text transform="matrix(1, 0, 0, 1, 654.194, 574.038)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-        <tspan x="-72.705" y="5" font-family="ArialMT" font-size="21" fill="#000000">Cytochrome </tspan>
-        <tspan x="46.332" y="5" font-family="Arial-ItalicMT" font-size="21" fill="#000000">b</tspan>
-        <tspan x="58.011" y="5" font-family="LucidaGrande" font-size="21" fill="#000000">₆</tspan>
-        <tspan x="66.871" y="5" font-family="Arial-ItalicMT" font-size="21" fill="#000000">f</tspan>
+        <tspan x="-72.705" y="5" font-family="Arial,ArialMT" font-size="21" fill="#000000">Cytochrome </tspan>
+        <tspan x="46.332" y="5" font-family="Arial,ArialMT" font-size="21" font-style="italic" fill="#000000">b₆f</tspan>
       </text>
     </g>
   </g><g id="plastocyanin" transform="matrix(1,0,0,1,-0.33697509765625,0)">
@@ -312,12 +325,11 @@
     </g>
     <g id="cofactor">
       <text transform="matrix(1, 0, 0, 1, 774.896, 438.433)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-        <tspan x="-14.586" y="5.378" font-family="ArialMT" font-size="10" fill="#000000">Cu</tspan>
-        <tspan x="-1.586" y="2.078" font-family="ArialMT" font-size="6" fill="#000000">2+</tspan>
+        <tspan x="-14.586" y="5.378" font-family="Arial,ArialMT" font-size="10" fill="#000000">Cu²⁺</tspan>
       </text>
     </g>
     <text transform="matrix(1, 0, 0, 1, 768.896, 480.233)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-      <tspan x="-14.586" y="5.378" font-family="ArialMT" font-size="21" fill="#000000">Pc</tspan>
+      <tspan x="-14.586" y="5.378" font-family="Arial,ArialMT" font-size="21" fill="#000000">Pc</tspan>
     </text>
   </g><g id="photosystem-i" transform="matrix(1,0,0,1,-0.2960205078125,0)">
     <g id="antenna">
@@ -340,16 +352,16 @@
     </text>
     <g id="cofactors">
       <text transform="matrix(1, 0, 0, 1, 839.873, 310.422)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-        <tspan x="-5.055" y="1.5" font-family="ArialMT" font-size="10" fill="#000000">F</tspan>
-        <tspan x="1.053" y="1.5" font-family="ArialMT" font-size="6" fill="#000000">A</tspan>
+        <tspan x="-5.055" y="1.5" font-family="Arial,ArialMT" font-size="10" fill="#000000">F</tspan>
+        <tspan x="1.053" y="1.5" font-family="Arial,ArialMT" font-size="6" fill="#000000">A</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 855.114, 296.961)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-        <tspan x="-5.055" y="1.5" font-family="ArialMT" font-size="10" fill="#000000">F</tspan>
-        <tspan x="1.053" y="1.5" font-family="ArialMT" font-size="6" fill="#000000">B</tspan>
+        <tspan x="-5.055" y="1.5" font-family="Arial,ArialMT" font-size="10" fill="#000000">F</tspan>
+        <tspan x="1.053" y="1.5" font-family="Arial,ArialMT" font-size="6" fill="#000000">B</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 851.544, 325.517)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-        <tspan x="-5.055" y="1.5" font-family="ArialMT" font-size="10" fill="#000000">F</tspan>
-        <tspan x="1.053" y="1.5" font-family="ArialMT" font-size="6" fill="#000000">X</tspan>
+        <tspan x="-5.055" y="1.5" font-family="Arial,ArialMT" font-size="10" fill="#000000">F</tspan>
+        <tspan x="1.053" y="1.5" font-family="Arial,ArialMT" font-size="6" fill="#000000">X</tspan>
       </text>
       <path d="M845.989,318.422 L841.815,314.773" fill-opacity="0" stroke="#000000" stroke-width="1"></path>
       <path d="M844.714,303.422 L848.888,299.835" fill-opacity="0" stroke="#000000" stroke-width="1"></path>
@@ -358,20 +370,20 @@
       <path d="M825.237,354.881 L828.748,338.892" fill-opacity="0" stroke="#000000" stroke-width="1"></path>
       <path d="M836.778,331.271 L845.329,327.239" fill-opacity="0" stroke="#000000" stroke-width="1"></path>
       <text transform="matrix(1, 0, 0, 1, 827.814, 334.111)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-        <tspan x="-7.004" y="1.5" font-family="ArialMT" font-size="10" fill="#000000">A</tspan>
-        <tspan x="-0.334" y="1.5" font-family="ArialMT" font-size="6" fill="#000000">1B</tspan>
+        <tspan x="-7.004" y="1.5" font-family="Arial,ArialMT" font-size="10" fill="#000000">A</tspan>
+        <tspan x="-0.334" y="1.5" font-family="Arial,ArialMT" font-size="6" fill="#000000">1B</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 825.167, 360.584)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-        <tspan x="-7.004" y="1.5" font-family="ArialMT" font-size="10" fill="#000000">A</tspan>
-        <tspan x="-0.334" y="1.5" font-family="ArialMT" font-size="6" fill="#000000">0B</tspan>
+        <tspan x="-7.004" y="1.5" font-family="Arial,ArialMT" font-size="10" fill="#000000">A</tspan>
+        <tspan x="-0.334" y="1.5" font-family="Arial,ArialMT" font-size="6" fill="#000000">0B</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 877.883, 334.726)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-        <tspan x="-7.004" y="1.5" font-family="ArialMT" font-size="10" fill="#000000">A</tspan>
-        <tspan x="-0.334" y="1.5" font-family="ArialMT" font-size="6" fill="#000000">1A</tspan>
+        <tspan x="-7.004" y="1.5" font-family="Arial,ArialMT" font-size="10" fill="#000000">A</tspan>
+        <tspan x="-0.334" y="1.5" font-family="Arial,ArialMT" font-size="6" fill="#000000">1A</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 879.769, 360.584)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-        <tspan x="-7.004" y="1.5" font-family="ArialMT" font-size="10" fill="#000000">A</tspan>
-        <tspan x="-0.334" y="1.5" font-family="ArialMT" font-size="6" fill="#000000">0A</tspan>
+        <tspan x="-7.004" y="1.5" font-family="Arial,ArialMT" font-size="10" fill="#000000">A</tspan>
+        <tspan x="-0.334" y="1.5" font-family="Arial,ArialMT" font-size="6" fill="#000000">0A</tspan>
       </text>
       <path d="M859.33,327.239 L867.88,331.271" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-dasharray="2,2"></path>
       <path d="M875.91,338.892 L879.422,354.881" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-dasharray="2,2"></path>
@@ -382,7 +394,7 @@
     </g>
     <g id="label">
       <text transform="matrix(1, 0, 0, 1, 848.998, 574.538)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-        <tspan x="-66.527" y="4.5" font-family="ArialMT" font-size="21" fill="#000000">Photosystem I</tspan>
+        <tspan x="-66.527" y="4.5" font-family="Arial,ArialMT" font-size="21" fill="#000000">Photosystem I</tspan>
       </text>
     </g>
   </g><g id="atp-synthase" transform="matrix(1,0,0,1,-0.07080078125,0)">
@@ -420,25 +432,25 @@
     </g>
     <g id="subunits">
       <text transform="matrix(1, 0, 0, 1, 1091.019, 249.488)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-        <tspan x="-2.62" y="2.5" font-family="STIXGeneral-Regular" font-size="10" fill="#000000">𝛼</tspan>
+        <tspan x="-2.62" y="2.5" font-family="Arial,ArialMT" font-size="10" fill="#000000">𝛼</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 1121.502, 249.488)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-        <tspan x="-2.465" y="2.5" font-family="STIXGeneral-Regular" font-size="10" fill="#000000">𝛽</tspan>
+        <tspan x="-2.465" y="2.5" font-family="Arial,ArialMT" font-size="10" fill="#000000">𝛽</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 1059.266, 249.488)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-        <tspan x="-2.465" y="2.5" font-family="STIXGeneral-Regular" font-size="10" fill="#000000">𝛽</tspan>
+        <tspan x="-2.465" y="2.5" font-family="Arial,ArialMT" font-size="10" fill="#000000">𝛽</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 1090.385, 272.773)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-        <tspan x="-2.14" y="2.5" font-family="STIXGeneral-Regular" font-size="10" fill="#000000">𝛾</tspan>
+        <tspan x="-2.14" y="2.5" font-family="Arial,ArialMT" font-size="10" fill="#000000">𝛾</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 1045.639, 370.657)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-        <tspan x="-1.389" y="1.5" font-family="ArialMT" font-size="10" fill="#000000">I</tspan>
+        <tspan x="-1.389" y="1.5" font-family="Arial,ArialMT" font-size="10" fill="#000000">I</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 1026.924, 213.734)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-        <tspan x="-2.315" y="2.5" font-family="STIXGeneral-Regular" font-size="10" fill="#000000">𝛿</tspan>
+        <tspan x="-2.315" y="2.5" font-family="Arial,ArialMT" font-size="10" fill="#000000">𝛿</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 1026.924, 321.319)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-        <tspan x="-2.778" y="1.5" font-family="ArialMT" font-size="10" fill="#000000">II</tspan>
+        <tspan x="-2.778" y="1.5" font-family="Arial,ArialMT" font-size="10" fill="#000000">II</tspan>
       </text>
     </g>
     <g id="reaction">
@@ -447,16 +459,16 @@
         <path d="M1035.563,172.122 L1040.551,171.344 L1029.883,165.933 L1034.362,177.024 z" fill="#41719C" fill-opacity="1" stroke="#41719C" stroke-width="3" stroke-opacity="1"></path>
       </g>
       <text transform="matrix(1, 0, 0, 1, 1021.553, 146.15)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-        <tspan x="-22.447" y="7.212" font-family="ArialMT" font-size="24" fill="#000000">ATP</tspan>
+        <tspan x="-22.447" y="7.212" font-family="Arial,ArialMT" font-size="24" fill="#000000">ATP</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 1180.086, 146.15)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-        <tspan x="-47.692" y="7.212" font-family="ArialMT" font-size="24" fill="#000000">ADP + P</tspan>
-        <tspan x="44.582" y="7.212" font-family="ArialMT" font-size="14" fill="#000000">i</tspan>
+        <tspan x="-47.692" y="7.212" font-family="Arial,ArialMT" font-size="24" fill="#000000">ADP + P</tspan>
+        <tspan x="44.582" y="7.212" font-family="Arial,ArialMT" font-size="14" fill="#000000">i</tspan>
       </text>
     </g>
     <g id="label">
       <text transform="matrix(1, 0, 0, 1, 1079.385, 574.538)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-        <tspan x="-66.148" y="4.5" font-family="ArialMT" font-size="21" fill="#000000">ATP Synthase</tspan>
+        <tspan x="-66.148" y="4.5" font-family="Arial,ArialMT" font-size="21" fill="#000000">ATP Synthase</tspan>
       </text>
     </g>
   </g><g id="vdx" transform="matrix(1,0,0,1,0.447998046875,0)">
@@ -474,10 +486,10 @@
         <path d="M144.445,357.925 L145.619,362.835 L150.159,351.768 L139.462,357.121 z" fill="#41719C" fill-opacity="1" stroke="#41719C" stroke-width="3" stroke-opacity="1"></path>
       </g>
       <text transform="matrix(1, 0, 0, 1, 45.556, 335.979)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-        <tspan x="-8.004" y="7.455" font-family="ArialMT" font-size="24" fill="#000000">V</tspan>
+        <tspan x="-8.004" y="7.455" font-family="Arial,ArialMT" font-size="24" fill="#000000">V</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 165.375, 335.979)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-        <tspan x="-7.33" y="7.455" font-family="ArialMT" font-size="24" fill="#000000">Z</tspan>
+        <tspan x="-7.33" y="7.455" font-family="Arial,ArialMT" font-size="24" fill="#000000">Z</tspan>
       </text>
     </g>
     <g id="vde">
@@ -486,7 +498,7 @@
         <path d="M105.966,427.106 C87.692,427.106 72.878,417.276 72.878,405.151 C72.878,393.025 87.692,383.195 105.966,383.195 C124.239,383.195 139.053,393.025 139.053,405.151 C139.053,417.276 124.239,427.106 105.966,427.106 z" fill-opacity="0" stroke="#3B3838" stroke-width="1"></path>
       </g>
       <text transform="matrix(1, 0, 0, 1, 105.466, 404.651)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-        <tspan x="-24.674" y="7.5" font-family="ArialMT" font-size="24" fill="#000000">VDE</tspan>
+        <tspan x="-24.674" y="7.5" font-family="Arial,ArialMT" font-size="24" fill="#000000">VDE</tspan>
       </text>
     </g>
     <g id="ze">
@@ -495,7 +507,7 @@
         <path d="M105.966,291.597 C87.692,291.597 72.878,281.767 72.878,269.641 C72.878,257.516 87.692,247.686 105.966,247.686 C124.239,247.686 139.053,257.516 139.053,269.641 C139.053,281.767 124.239,291.597 105.966,291.597 z" fill-opacity="0" stroke="#3B3838" stroke-width="1"></path>
       </g>
       <text transform="matrix(1, 0, 0, 1, 105.466, 269.141)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-        <tspan x="-15.334" y="7.5" font-family="ArialMT" font-size="24" fill="#000000">ZE</tspan>
+        <tspan x="-15.334" y="7.5" font-family="Arial,ArialMT" font-size="24" fill="#000000">ZE</tspan>
       </text>
     </g>
     <g id="psbs">
@@ -504,7 +516,7 @@
         <path d="M245.618,293.94 L270.775,293.94 C276.882,293.94 281.833,298.481 281.833,304.083 L281.833,371.767 C281.833,377.368 276.882,381.909 270.775,381.909 L245.618,381.909 C239.511,381.909 234.56,377.368 234.56,371.767 L234.56,304.083 C234.56,298.481 239.511,293.94 245.618,293.94 z" fill-opacity="0" stroke="#3B3838" stroke-width="1"></path>
       </g>
       <text transform="matrix(1, 0, 0, 1, 257.822, 367.077)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-        <tspan x="-16.731" y="4.073" font-family="ArialMT" font-size="14" fill="#000000">PsbS</tspan>
+        <tspan x="-16.731" y="4.073" font-family="Arial,ArialMT" font-size="14" fill="#000000">PsbS</tspan>
       </text>
     </g>
   </g><g id="ferredoxin" transform="matrix(1,0,0,1,0.16302490234375,0)">
@@ -513,7 +525,7 @@
       <path d="M854.896,226.945 C845.475,226.945 837.837,219.307 837.837,209.886 C837.837,200.464 845.475,192.827 854.896,192.827 C864.318,192.827 871.956,200.464 871.956,209.886 C871.956,219.307 864.318,226.945 854.896,226.945 z" fill-opacity="0" stroke="#3B3838" stroke-width="1"></path>
     </g>
     <text transform="matrix(1, 0, 0, 1, 882.063, 238.536)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-      <tspan x="-12.253" y="4.689" font-family="ArialMT" font-size="21" fill="#000000">Fd</tspan>
+      <tspan x="-12.253" y="4.689" font-family="Arial,ArialMT" font-size="21" fill="#000000">Fd</tspan>
     </text>
   </g><g id="fnr" transform="matrix(1,0,0,1,-0.2490234375,0)">
     <g id="shape">
@@ -526,15 +538,14 @@
         <path d="M940.627,92.514 L941.828,97.416 L946.307,86.325 L935.639,91.736 z" fill="#41719C" fill-opacity="1" stroke="#41719C" stroke-width="3" stroke-opacity="1"></path>
       </g>
       <text transform="matrix(1, 0, 0, 1, 828.651, 66.755)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-        <tspan x="-38.402" y="8" font-family="ArialMT" font-size="24" fill="#000000">NADP</tspan>
-        <tspan x="28.277" y="8" font-family="LucidaGrande" font-size="24" fill="#000000">⁺</tspan>
+        <tspan x="-38.402" y="8" font-family="Arial,ArialMT" font-size="24" fill="#000000">NADP⁺</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 963.656, 66.755)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-        <tspan x="-42.006" y="7.212" font-family="ArialMT" font-size="24" fill="#000000">NADPH</tspan>
+        <tspan x="-42.006" y="7.212" font-family="Arial,ArialMT" font-size="24" fill="#000000">NADPH</tspan>
       </text>
     </g>
     <text transform="matrix(1, 0, 0, 1, 917.873, 162.576)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-      <tspan x="-21.579" y="4.689" font-family="ArialMT" font-size="21" fill="#000000">FNR</tspan>
+      <tspan x="-21.579" y="4.689" font-family="Arial,ArialMT" font-size="21" fill="#000000">FNR</tspan>
     </text>
   </g><g id="ptox" transform="matrix(1,0,0,1,0.218994140625,0)">
     <g id="shape">
@@ -542,21 +553,18 @@
       <path d="M529.832,302.301 C511.558,302.301 496.745,292.471 496.745,280.346 C496.745,268.22 511.558,258.39 529.832,258.39 C548.106,258.39 562.919,268.22 562.919,280.346 C562.919,292.471 548.106,302.301 529.832,302.301 z" fill-opacity="0" stroke="#3B3838" stroke-width="1"></path>
     </g>
     <text transform="matrix(1, 0, 0, 1, 529.332, 279.846)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-      <tspan x="-24.341" y="5.5" font-family="ArialMT" font-size="18" fill="#000000">PTOX</tspan>
+      <tspan x="-24.341" y="5.5" font-family="Arial,ArialMT" font-size="18" fill="#000000">PTOX</tspan>
     </text>
     <g id="reaction">
       <g>
         <path d="M561.614,243.741 C551.06,257.538 541.669,265.828 529.576,265.828 C513.595,265.828 500.385,248.871 491.077,236.166" fill-opacity="0" stroke="#41719C" stroke-width="3"></path>
         <path d="M561.614,243.741 L563.345,248.483 L566.582,236.968 L556.571,243.515 z" fill="#41719C" fill-opacity="1" stroke="#41719C" stroke-width="3" stroke-opacity="1"></path>
       </g>
-      <text transform="matrix(1, 0, 0, 1, 490.177, 218.32)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-        <tspan x="-14.396" y="8" font-family="ArialMT" font-size="24" fill="#000000">O</tspan>
-        <tspan x="4.271" y="8" font-family="LucidaGrande" font-size="24" fill="#000000">₂</tspan>
+      <text transform="matrix(1, 0, 0, 1, 490.177, 214.32)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
+        <tspan x="-14.396" y="8" font-family="Arial,ArialMT" font-size="24" fill="#000000">O₂</tspan>
       </text>
-      <text transform="matrix(1, 0, 0, 1, 570.337, 218.32)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-        <tspan x="-23.062" y="8" font-family="ArialMT" font-size="24" fill="#000000">H</tspan>
-        <tspan x="-5.73" y="8" font-family="LucidaGrande" font-size="24" fill="#000000">₂</tspan>
-        <tspan x="4.395" y="8" font-family="ArialMT" font-size="24" fill="#000000">O</tspan>
+      <text transform="matrix(1, 0, 0, 1, 570.337, 214.32)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
+        <tspan x="-23.062" y="8" font-family="Arial,ArialMT" font-size="24" fill="#000000">H₂O</tspan>
       </text>
     </g>
   </g><g id="ion-channels" transform="matrix(1,0,0,1,0.2069091796875,0)">
@@ -574,21 +582,20 @@
     </g>
     <g id="pmf">
       <text transform="matrix(1, 0, 0, 1, 1358.84, 336.004)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-        <tspan x="-33.548" y="5.5" font-family="ArialMT" font-size="18" fill="#EE6600">ΔΨ/</tspan>
-        <tspan x="-1.485" y="5.5" font-family="ArialMT" font-size="18" fill="#EE6600">Δ</tspan>
-        <tspan x="10.538" y="5.5" font-family="ArialMT" font-size="18" fill="#EE6600">pH</tspan>
+        <tspan x="-33.548" y="5.5" font-family="Arial,ArialMT" font-size="18" fill="#EE6600">ΔΨ/</tspan>
+        <tspan x="-1.485" y="5.5" font-family="Arial,ArialMT" font-size="18" fill="#EE6600">Δ</tspan>
+        <tspan x="10.538" y="5.5" font-family="Arial,ArialMT" font-size="18" fill="#EE6600">pH</tspan>
       </text>
     </g>
     <g id="label">
       <text transform="matrix(1, 0, 0, 1, 1243.67, 574.538)" id="Ion_Channels" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-        <tspan x="-61.877" y="4.5" font-family="ArialMT" font-size="21" fill="#000000">Ion Channels</tspan>
+        <tspan x="-61.877" y="4.5" font-family="Arial,ArialMT" font-size="21" fill="#000000">Ion Channels</tspan>
       </text>
     </g>
   </g><g id="ion-flux" transform="matrix(1,0,0,1,-0.1610107421875,0)">
     <g id="ca-channel">
       <text transform="matrix(1, 0, 0, 1, 1209.563, 436.118)" id="Ca⁺" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-        <tspan x="-20.402" y="8" font-family="ArialMT" font-size="24" fill="#000000">Ca</tspan>
-        <tspan x="10.277" y="8" font-family="LucidaGrande" font-size="24" fill="#000000">⁺</tspan>
+        <tspan x="-20.402" y="8" font-family="Arial,ArialMT" font-size="24" fill="#000000">Ca⁺</tspan>
       </text>
       <g id="direction">
         <path d="M1210.063,409.591 L1210.063,254.585" fill-opacity="0" stroke="#00BCFF" stroke-width="3"></path>
@@ -597,12 +604,10 @@
     </g>
     <g id="k-channel">
       <text transform="matrix(1, 0, 0, 1, 1280.918, 236.382)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-        <tspan x="-13.729" y="8" font-family="ArialMT" font-size="24" fill="#000000">H</tspan>
-        <tspan x="3.604" y="8" font-family="LucidaGrande" font-size="24" fill="#000000">⁺</tspan>
+        <tspan x="-13.729" y="8" font-family="Arial,ArialMT" font-size="24" fill="#000000">H⁺</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 1269.368, 439.123)" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}">
-        <tspan x="-13.066" y="8" font-family="ArialMT" font-size="24" fill="#000000">K</tspan>
-        <tspan x="2.941" y="8" font-family="LucidaGrande" font-size="24" fill="#000000">⁺</tspan>
+        <tspan x="-13.066" y="8" font-family="Arial,ArialMT" font-size="24" fill="#000000">K⁺</tspan>
       </text>
       <g id="direction">
         <path d="M1264.812,408.277 L1264.812,253.271" fill-opacity="0" stroke="#00BCFF" stroke-width="3"></path>
