@@ -13,13 +13,21 @@ const el = `<?xml version="1.0" encoding="UTF-8"?>
 </svg>`;
 
 
-const thylakoidmembrane = ({ color = '#DBDBDB' } = {}) => {
+const thylakoidmembrane = ({ color = '#DBDBDB', border = true } = {}) => {
 
   let draw = SVG();
   draw.svg(el);
 
   let path = draw.findOne('#thylakoidmembrane path');
   path.fill(color)
+
+  if(!border){
+    let borders = draw.find('#thylakoidmembrane path');
+    borders.forEach(shape => {
+      if(shape.attr('stroke-width') > 0)
+        shape.remove()
+    });
+  }
 
   return draw.findOne('svg').svg(false);
 
@@ -33,6 +41,7 @@ export const settings = () => {
     "headerTitle": "Thylakoid Membrane",
     "show": true,
     "options": [
+      { "type": "check", "name": "border", "value": true, "label": "Border" },
       { "type": "color", "name": "color", "value": "#DBDBDB", "label": "Background" },
     ]
   }
