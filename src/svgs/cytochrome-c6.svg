@@ -14,8 +14,7 @@
       </g>
     </g>
     <text transform="matrix(1, 0, 0, 1, 763.499, 480.233)">
-      <tspan x="-28.347" y="6.378" font-family="ArialMT" font-size="21" fill="#000000">Cyt c</tspan>
-      <tspan x="19.488" y="6.378" font-family="LucidaGrande" font-size="21" fill="#000000">₆</tspan>
+      <tspan x="-28.347" y="6.378" font-family="Arial,ArialMT" font-size="21" fill="#000000">Cyt c₆</tspan>
     </text>
   </g>
 </svg>

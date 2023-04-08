@@ -15,49 +15,44 @@
     <g id="cofactors">
       <g id="b6l">
         <text transform="matrix(1, 0, 0, 1, 666.625, 340.175)">
-          <tspan x="-2.781" y="1.5" font-family="ArialMT" font-size="10" fill="#000000">b</tspan>
+          <tspan x="-2.781" y="1.5" font-family="Arial,ArialMT" font-size="10" fill="#000000">b</tspan>
         </text>
         <text transform="matrix(1, 0, 0, 1, 670.266, 343.072)">
-          <tspan x="-1.668" y="1" font-family="Arial-ItalicMT" font-size="6" fill="#000000">L</tspan>
+          <tspan x="-1.668" y="1" font-family="Arial,ArialMT" font-size="6" font-style="italic" fill="#000000">L</tspan>
         </text>
       </g>
       <text transform="matrix(1, 0, 0, 1, 648.547, 306.901)">
-        <tspan x="-5.558" y="1.5" font-family="ArialMT" font-size="10" fill="#000000">Q</tspan>
-        <tspan x="2.221" y="1.5" font-family="ArialMT" font-size="6" fill="#000000">n</tspan>
+        <tspan x="-5.558" y="1.5" font-family="Arial,ArialMT" font-size="10" fill="#000000">Q</tspan>
+        <tspan x="2.221" y="1.5" font-family="Arial,ArialMT" font-size="6" fill="#000000">n</tspan>
       </text>
       <path d="M656.401,344.833 L661.727,340.305" fill-opacity="0" stroke="#000000" stroke-width="1"/>
       <path d="M662.635,360.504 L657.061,355.749" fill-opacity="0" stroke="#000000" stroke-width="1"/>
       <text transform="matrix(1, 0, 0, 1, 687.415, 389.241)">
-        <tspan x="-1.389" y="1.5" font-family="Arial-ItalicMT" font-size="10" fill="#000000">f</tspan>
+        <tspan x="-1.389" y="1.5" font-family="Arial,ArialMT" font-size="10" font-style="italic" fill="#000000">f</tspan>
       </text>
       <path d="M684.843,383.195 L678.856,375.36" fill-opacity="0" stroke="#000000" stroke-width="1"/>
       <text transform="matrix(1, 0, 0, 1, 669.694, 367.504)">
-        <tspan x="-13.793" y="2.5" font-family="ArialMT" font-size="10" fill="#000000">Fe</tspan>
-        <tspan x="-2.123" y="2.5" font-family="LucidaGrande" font-size="10" fill="#000000">₂</tspan>
-        <tspan x="2.095" y="2.5" font-family="ArialMT" font-size="10" fill="#000000">S</tspan>
-        <tspan x="8.765" y="2.5" font-family="LucidaGrande" font-size="10" fill="#000000">₂</tspan>
+        <tspan x="-13.793" y="2.5" font-family="Arial,ArialMT" font-size="10" fill="#000000">Fe₂S₂</tspan>
       </text>
       <g id="b6h">
         <text transform="matrix(1, 0, 0, 1, 666.127, 314.582)">
-          <tspan x="-2.781" y="1.5" font-family="ArialMT" font-size="10" fill="#000000">b</tspan>
+          <tspan x="-2.781" y="1.5" font-family="Arial,ArialMT" font-size="10" fill="#000000">b</tspan>
         </text>
         <text transform="matrix(1, 0, 0, 1, 670.266, 317.479)">
-          <tspan x="-2.167" y="1" font-family="Arial-ItalicMT" font-size="6" fill="#000000">H</tspan>
+          <tspan x="-2.167" y="1" font-family="Arial,ArialMT" font-size="6" font-style="italic" fill="#000000">H</tspan>
         </text>
       </g>
       <path d="M667.23,330.916 L667.23,322.27" fill-opacity="0" stroke="#000000" stroke-width="1"/>
       <text transform="matrix(1, 0, 0, 1, 650.529, 350.479)">
-        <tspan x="-5.558" y="1.5" font-family="ArialMT" font-size="10" fill="#000000">Q</tspan>
-        <tspan x="2.221" y="1.5" font-family="ArialMT" font-size="6" fill="#000000">p</tspan>
+        <tspan x="-5.558" y="1.5" font-family="Arial,ArialMT" font-size="10" fill="#000000">Q</tspan>
+        <tspan x="2.221" y="1.5" font-family="Arial,ArialMT" font-size="6" fill="#000000">p</tspan>
       </text>
       <path d="M661.975,313.358 L656.401,308.603" fill-opacity="0" stroke="#000000" stroke-width="1"/>
     </g>
     <g id="label">
       <text transform="matrix(1, 0, 0, 1, 654.194, 574.038)">
-        <tspan x="-72.705" y="5" font-family="ArialMT" font-size="21" fill="#000000">Cytochrome </tspan>
-        <tspan x="46.332" y="5" font-family="Arial-ItalicMT" font-size="21" fill="#000000">b</tspan>
-        <tspan x="58.011" y="5" font-family="LucidaGrande" font-size="21" fill="#000000">₆</tspan>
-        <tspan x="66.871" y="5" font-family="Arial-ItalicMT" font-size="21" fill="#000000">f</tspan>
+        <tspan x="-72.705" y="5" font-family="Arial,ArialMT" font-size="21" fill="#000000">Cytochrome </tspan>
+        <tspan x="46.332" y="5" font-family="Arial,ArialMT" font-size="21" font-style="italic" fill="#000000">b₆f</tspan>
       </text>
     </g>
   </g>

@@ -7,8 +7,7 @@
       <path d="M519.983,354.984 L510.134,337.925 L519.983,320.865 L539.681,320.865 L549.53,337.925 L539.681,354.984 z" fill-opacity="0" stroke="#3B3838" stroke-width="1"/>
     </g>
     <text transform="matrix(1, 0, 0, 1, 529.332, 390.225)">
-      <tspan x="-45.271" y="5.689" font-family="ArialMT" font-size="21" fill="#000000">PQ/PQH</tspan>
-      <tspan x="36.412" y="5.689" font-family="LucidaGrande" font-size="21" fill="#000000">₂</tspan>
+      <tspan x="-45.271" y="5.689" font-family="Arial,ArialMT" font-size="21" fill="#000000">PQ/PQH₂</tspan>
     </text>
   </g>
 </svg>

@@ -16,14 +16,14 @@
     </g>
     <g id="pmf">
       <text transform="matrix(1, 0, 0, 1, 1358.84, 336.004)">
-        <tspan x="-33.548" y="5.5" font-family="ArialMT" font-size="18" fill="#EE6600">ΔΨ/</tspan>
-        <tspan x="-1.485" y="5.5" font-family="ArialMT" font-size="18" fill="#EE6600">Δ</tspan>
-        <tspan x="10.538" y="5.5" font-family="ArialMT" font-size="18" fill="#EE6600">pH</tspan>
+        <tspan x="-33.548" y="5.5" font-family="Arial,ArialMT" font-size="18" fill="#EE6600">ΔΨ/</tspan>
+        <tspan x="-1.485" y="5.5" font-family="Arial,ArialMT" font-size="18" fill="#EE6600">Δ</tspan>
+        <tspan x="10.538" y="5.5" font-family="Arial,ArialMT" font-size="18" fill="#EE6600">pH</tspan>
       </text>
     </g>
     <g id="label">
       <text transform="matrix(1, 0, 0, 1, 1243.67, 574.538)" id="Ion_Channels">
-        <tspan x="-61.877" y="4.5" font-family="ArialMT" font-size="21" fill="#000000">Ion Channels</tspan>
+        <tspan x="-61.877" y="4.5" font-family="Arial,ArialMT" font-size="21" fill="#000000">Ion Channels</tspan>
       </text>
     </g>
   </g>

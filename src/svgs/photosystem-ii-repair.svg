@@ -22,7 +22,7 @@
         <path d="M252.296,161.871 C238.719,161.871 227.713,137.221 227.713,106.813 C227.713,76.405 238.719,51.755 252.296,51.755 C265.872,51.755 276.879,76.405 276.879,106.813 C276.879,137.221 265.872,161.871 252.296,161.871 z" fill-opacity="0" stroke="#3B3838" stroke-width="1"/>
       </g>
       <text transform="matrix(1, 0, 0, 1, 251.954, 140.33)">
-        <tspan x="-8.948" y="4.5" font-family="ArialMT" font-size="14" fill="#000000">D1</tspan>
+        <tspan x="-8.948" y="4.5" font-family="Arial,ArialMT" font-size="14" fill="#000000">D1</tspan>
       </text>
     </g>
     <g id="antenna">
@@ -45,10 +45,10 @@
         <path d="M194.942,180.037 L195.274,185.796 L202.609,174.261 L189.498,178.129 z" fill="#983432" fill-opacity="1" stroke="#983432" stroke-width="4" stroke-opacity="1"/>
       </g>
       <text transform="matrix(1, 0, 0, 1, 138.727, 196.734)">
-        <tspan x="-25.938" y="4.5" font-family="ArialMT" font-size="14" fill="#000000">damage</tspan>
+        <tspan x="-25.938" y="4.5" font-family="Arial,ArialMT" font-size="14" fill="#000000">damage</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 414.208, 173.962)">
-        <tspan x="-19.114" y="4.5" font-family="ArialMT" font-size="14" fill="#000000">repair</tspan>
+        <tspan x="-19.114" y="4.5" font-family="Arial,ArialMT" font-size="14" fill="#000000">repair</tspan>
       </text>
     </g>
     <g id="light">
