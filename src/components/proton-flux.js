@@ -22,12 +22,10 @@ const el = `<?xml version="1.0" encoding="UTF-8"?>
         <path d="M1124.963,99.587 L1125.626,104.591 L1131.28,94.05 L1120.089,98.274 z" fill="#00BCFF" fill-opacity="1" stroke="#00BCFF" stroke-width="3" stroke-opacity="1"/>
       </g>
       <text transform="matrix(1, 0, 0, 1, 1151.418, 85.829)">
-        <tspan x="-13.729" y="8" font-family="ArialMT" font-size="24" fill="#000000">H</tspan>
-        <tspan x="3.604" y="8" font-family="LucidaGrande" font-size="24" fill="#000000">⁺</tspan>
+        <tspan x="-13.729" y="8" font-family="Arial,ArialMT" font-size="24" fill="#000000">H⁺</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 1030.685, 480.747)">
-        <tspan x="-13.729" y="8" font-family="ArialMT" font-size="24" fill="#000000">H</tspan>
-        <tspan x="3.604" y="8" font-family="LucidaGrande" font-size="24" fill="#000000">⁺</tspan>
+        <tspan x="-13.729" y="8" font-family="Arial,ArialMT" font-size="24" fill="#000000">H⁺</tspan>
       </text>
     </g>
     <g id="stroma-ps-ii">
@@ -36,8 +34,7 @@ const el = `<?xml version="1.0" encoding="UTF-8"?>
         <path d="M430.181,292.514 L425.149,292.917 L435.383,299.109 L431.745,287.714 z" fill="#00BCFF" fill-opacity="1" stroke="#00BCFF" stroke-width="3" stroke-opacity="1"/>
       </g>
       <text transform="matrix(1, 0, 0, 1, 420.743, 237.847)">
-        <tspan x="-13.729" y="8" font-family="ArialMT" font-size="24" fill="#000000">H</tspan>
-        <tspan x="3.604" y="8" font-family="LucidaGrande" font-size="24" fill="#000000">⁺</tspan>
+        <tspan x="-13.729" y="8" font-family="Arial,ArialMT" font-size="24" fill="#000000">H⁺</tspan>
       </text>
     </g>
     <g id="stroma-b6f">
@@ -46,8 +43,7 @@ const el = `<?xml version="1.0" encoding="UTF-8"?>
         <path d="M612.084,293.514 L610.52,288.714 L606.882,300.109 L617.115,293.917 z" fill="#00BCFF" fill-opacity="1" stroke="#00BCFF" stroke-width="3" stroke-opacity="1"/>
       </g>
       <text transform="matrix(1, 0, 0, 1, 631.035, 238.847)">
-        <tspan x="-13.729" y="8" font-family="ArialMT" font-size="24" fill="#000000">H</tspan>
-        <tspan x="3.604" y="8" font-family="LucidaGrande" font-size="24" fill="#000000">⁺</tspan>
+        <tspan x="-13.729" y="8" font-family="Arial,ArialMT" font-size="24" fill="#000000">H⁺</tspan>
       </text>
     </g>
     <g id="b6f-lumen">
@@ -56,8 +52,7 @@ const el = `<?xml version="1.0" encoding="UTF-8"?>
         <path d="M621.862,421.125 L617.513,423.689 L629.425,424.78 L621.168,416.126 z" fill="#00BCFF" fill-opacity="1" stroke="#00BCFF" stroke-width="3" stroke-opacity="1"/>
       </g>
       <text transform="matrix(1, 0, 0, 1, 652.013, 433.79)">
-        <tspan x="-13.729" y="8" font-family="ArialMT" font-size="24" fill="#000000">H</tspan>
-        <tspan x="3.604" y="8" font-family="LucidaGrande" font-size="24" fill="#000000">⁺</tspan>
+        <tspan x="-13.729" y="8" font-family="Arial,ArialMT" font-size="24" fill="#000000">H⁺</tspan>
       </text>
     </g>
   </g>

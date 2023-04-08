@@ -13,7 +13,7 @@ const el = `<?xml version="1.0" encoding="UTF-8"?>
   </defs>
   <g id="stroma" transform="translate(0, 0)">
     <text transform="matrix(1, 0, 0, 1, 1355.338, 279.014)">
-      <tspan x="-34.518" y="7.212" font-family="ArialMT" font-size="24" fill="#000000">stroma</tspan>
+      <tspan x="-34.518" y="7.212" font-family="Arial,ArialMT" font-size="24" fill="#000000">stroma</tspan>
     </text>
     <path d="M-0,0 L1400,0 L1400,296.004 L-0,296.004 L-0,0 z" fill="url(#Gradient_1)" id="shape" opacity="0.123"/>
   </g>

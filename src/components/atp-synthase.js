@@ -40,25 +40,25 @@ const el = `<?xml version="1.0" encoding="UTF-8"?>
     </g>
     <g id="subunits">
       <text transform="matrix(1, 0, 0, 1, 1091.019, 249.488)">
-        <tspan x="-2.62" y="2.5" font-family="STIXGeneral-Regular" font-size="10" fill="#000000">𝛼</tspan>
+        <tspan x="-2.62" y="2.5" font-family="Arial,ArialMT" font-size="10" fill="#000000">𝛼</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 1121.502, 249.488)">
-        <tspan x="-2.465" y="2.5" font-family="STIXGeneral-Regular" font-size="10" fill="#000000">𝛽</tspan>
+        <tspan x="-2.465" y="2.5" font-family="Arial,ArialMT" font-size="10" fill="#000000">𝛽</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 1059.266, 249.488)">
-        <tspan x="-2.465" y="2.5" font-family="STIXGeneral-Regular" font-size="10" fill="#000000">𝛽</tspan>
+        <tspan x="-2.465" y="2.5" font-family="Arial,ArialMT" font-size="10" fill="#000000">𝛽</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 1090.385, 272.773)">
-        <tspan x="-2.14" y="2.5" font-family="STIXGeneral-Regular" font-size="10" fill="#000000">𝛾</tspan>
+        <tspan x="-2.14" y="2.5" font-family="Arial,ArialMT" font-size="10" fill="#000000">𝛾</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 1045.639, 370.657)">
-        <tspan x="-1.389" y="1.5" font-family="ArialMT" font-size="10" fill="#000000">I</tspan>
+        <tspan x="-1.389" y="1.5" font-family="Arial,ArialMT" font-size="10" fill="#000000">I</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 1026.924, 213.734)">
-        <tspan x="-2.315" y="2.5" font-family="STIXGeneral-Regular" font-size="10" fill="#000000">𝛿</tspan>
+        <tspan x="-2.315" y="2.5" font-family="Arial,ArialMT" font-size="10" fill="#000000">𝛿</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 1026.924, 321.319)">
-        <tspan x="-2.778" y="1.5" font-family="ArialMT" font-size="10" fill="#000000">II</tspan>
+        <tspan x="-2.778" y="1.5" font-family="Arial,ArialMT" font-size="10" fill="#000000">II</tspan>
       </text>
     </g>
     <g id="reaction">
@@ -67,16 +67,16 @@ const el = `<?xml version="1.0" encoding="UTF-8"?>
         <path d="M1035.563,172.122 L1040.551,171.344 L1029.883,165.933 L1034.362,177.024 z" fill="#41719C" fill-opacity="1" stroke="#41719C" stroke-width="3" stroke-opacity="1"/>
       </g>
       <text transform="matrix(1, 0, 0, 1, 1021.553, 146.15)">
-        <tspan x="-22.447" y="7.212" font-family="ArialMT" font-size="24" fill="#000000">ATP</tspan>
+        <tspan x="-22.447" y="7.212" font-family="Arial,ArialMT" font-size="24" fill="#000000">ATP</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 1180.086, 146.15)">
-        <tspan x="-47.692" y="7.212" font-family="ArialMT" font-size="24" fill="#000000">ADP + P</tspan>
-        <tspan x="44.582" y="7.212" font-family="ArialMT" font-size="14" fill="#000000">i</tspan>
+        <tspan x="-47.692" y="7.212" font-family="Arial,ArialMT" font-size="24" fill="#000000">ADP + P</tspan>
+        <tspan x="44.582" y="7.212" font-family="Arial,ArialMT" font-size="14" fill="#000000">i</tspan>
       </text>
     </g>
     <g id="label">
       <text transform="matrix(1, 0, 0, 1, 1079.385, 574.538)">
-        <tspan x="-66.148" y="4.5" font-family="ArialMT" font-size="21" fill="#000000">ATP Synthase</tspan>
+        <tspan x="-66.148" y="4.5" font-family="Arial,ArialMT" font-size="21" fill="#000000">ATP Synthase</tspan>
       </text>
     </g>
   </g>

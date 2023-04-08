@@ -8,8 +8,7 @@ const el = `<?xml version="1.0" encoding="UTF-8"?>
   <g id="ion-flux" transform="translate(0, 0)">
     <g id="ca-channel">
       <text transform="matrix(1, 0, 0, 1, 1209.563, 436.118)" id="Ca⁺">
-        <tspan x="-20.402" y="8" font-family="ArialMT" font-size="24" fill="#000000">Ca</tspan>
-        <tspan x="10.277" y="8" font-family="LucidaGrande" font-size="24" fill="#000000">⁺</tspan>
+        <tspan x="-20.402" y="8" font-family="Arial,ArialMT" font-size="24" fill="#000000">Ca⁺</tspan>
       </text>
       <g id="direction">
         <path d="M1210.063,409.591 L1210.063,254.585" fill-opacity="0" stroke="#00BCFF" stroke-width="3"/>
@@ -18,12 +17,10 @@ const el = `<?xml version="1.0" encoding="UTF-8"?>
     </g>
     <g id="k-channel">
       <text transform="matrix(1, 0, 0, 1, 1280.918, 236.382)">
-        <tspan x="-13.729" y="8" font-family="ArialMT" font-size="24" fill="#000000">H</tspan>
-        <tspan x="3.604" y="8" font-family="LucidaGrande" font-size="24" fill="#000000">⁺</tspan>
+        <tspan x="-13.729" y="8" font-family="Arial,ArialMT" font-size="24" fill="#000000">H⁺</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 1269.368, 439.123)">
-        <tspan x="-13.066" y="8" font-family="ArialMT" font-size="24" fill="#000000">K</tspan>
-        <tspan x="2.941" y="8" font-family="LucidaGrande" font-size="24" fill="#000000">⁺</tspan>
+        <tspan x="-13.066" y="8" font-family="Arial,ArialMT" font-size="24" fill="#000000">K⁺</tspan>
       </text>
       <g id="direction">
         <path d="M1264.812,408.277 L1264.812,253.271" fill-opacity="0" stroke="#00BCFF" stroke-width="3"/>

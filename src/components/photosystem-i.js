@@ -26,16 +26,16 @@ const el = `<?xml version="1.0" encoding="UTF-8"?>
     </text>
     <g id="cofactors">
       <text transform="matrix(1, 0, 0, 1, 839.873, 310.422)">
-        <tspan x="-5.055" y="1.5" font-family="ArialMT" font-size="10" fill="#000000">F</tspan>
-        <tspan x="1.053" y="1.5" font-family="ArialMT" font-size="6" fill="#000000">A</tspan>
+        <tspan x="-5.055" y="1.5" font-family="Arial,ArialMT" font-size="10" fill="#000000">F</tspan>
+        <tspan x="1.053" y="1.5" font-family="Arial,ArialMT" font-size="6" fill="#000000">A</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 855.114, 296.961)">
-        <tspan x="-5.055" y="1.5" font-family="ArialMT" font-size="10" fill="#000000">F</tspan>
-        <tspan x="1.053" y="1.5" font-family="ArialMT" font-size="6" fill="#000000">B</tspan>
+        <tspan x="-5.055" y="1.5" font-family="Arial,ArialMT" font-size="10" fill="#000000">F</tspan>
+        <tspan x="1.053" y="1.5" font-family="Arial,ArialMT" font-size="6" fill="#000000">B</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 851.544, 325.517)">
-        <tspan x="-5.055" y="1.5" font-family="ArialMT" font-size="10" fill="#000000">F</tspan>
-        <tspan x="1.053" y="1.5" font-family="ArialMT" font-size="6" fill="#000000">X</tspan>
+        <tspan x="-5.055" y="1.5" font-family="Arial,ArialMT" font-size="10" fill="#000000">F</tspan>
+        <tspan x="1.053" y="1.5" font-family="Arial,ArialMT" font-size="6" fill="#000000">X</tspan>
       </text>
       <path d="M845.989,318.422 L841.815,314.773" fill-opacity="0" stroke="#000000" stroke-width="1"/>
       <path d="M844.714,303.422 L848.888,299.835" fill-opacity="0" stroke="#000000" stroke-width="1"/>
@@ -44,20 +44,20 @@ const el = `<?xml version="1.0" encoding="UTF-8"?>
       <path d="M825.237,354.881 L828.748,338.892" fill-opacity="0" stroke="#000000" stroke-width="1"/>
       <path d="M836.778,331.271 L845.329,327.239" fill-opacity="0" stroke="#000000" stroke-width="1"/>
       <text transform="matrix(1, 0, 0, 1, 827.814, 334.111)">
-        <tspan x="-7.004" y="1.5" font-family="ArialMT" font-size="10" fill="#000000">A</tspan>
-        <tspan x="-0.334" y="1.5" font-family="ArialMT" font-size="6" fill="#000000">1B</tspan>
+        <tspan x="-7.004" y="1.5" font-family="Arial,ArialMT" font-size="10" fill="#000000">A</tspan>
+        <tspan x="-0.334" y="1.5" font-family="Arial,ArialMT" font-size="6" fill="#000000">1B</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 825.167, 360.584)">
-        <tspan x="-7.004" y="1.5" font-family="ArialMT" font-size="10" fill="#000000">A</tspan>
-        <tspan x="-0.334" y="1.5" font-family="ArialMT" font-size="6" fill="#000000">0B</tspan>
+        <tspan x="-7.004" y="1.5" font-family="Arial,ArialMT" font-size="10" fill="#000000">A</tspan>
+        <tspan x="-0.334" y="1.5" font-family="Arial,ArialMT" font-size="6" fill="#000000">0B</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 877.883, 334.726)">
-        <tspan x="-7.004" y="1.5" font-family="ArialMT" font-size="10" fill="#000000">A</tspan>
-        <tspan x="-0.334" y="1.5" font-family="ArialMT" font-size="6" fill="#000000">1A</tspan>
+        <tspan x="-7.004" y="1.5" font-family="Arial,ArialMT" font-size="10" fill="#000000">A</tspan>
+        <tspan x="-0.334" y="1.5" font-family="Arial,ArialMT" font-size="6" fill="#000000">1A</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 879.769, 360.584)">
-        <tspan x="-7.004" y="1.5" font-family="ArialMT" font-size="10" fill="#000000">A</tspan>
-        <tspan x="-0.334" y="1.5" font-family="ArialMT" font-size="6" fill="#000000">0A</tspan>
+        <tspan x="-7.004" y="1.5" font-family="Arial,ArialMT" font-size="10" fill="#000000">A</tspan>
+        <tspan x="-0.334" y="1.5" font-family="Arial,ArialMT" font-size="6" fill="#000000">0A</tspan>
       </text>
       <path d="M859.33,327.239 L867.88,331.271" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-dasharray="2,2"/>
       <path d="M875.91,338.892 L879.422,354.881" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-dasharray="2,2"/>
@@ -68,7 +68,7 @@ const el = `<?xml version="1.0" encoding="UTF-8"?>
     </g>
     <g id="label">
       <text transform="matrix(1, 0, 0, 1, 848.998, 574.538)">
-        <tspan x="-66.527" y="4.5" font-family="ArialMT" font-size="21" fill="#000000">Photosystem I</tspan>
+        <tspan x="-66.527" y="4.5" font-family="Arial,ArialMT" font-size="21" fill="#000000">Photosystem I</tspan>
       </text>
     </g>
   </g>

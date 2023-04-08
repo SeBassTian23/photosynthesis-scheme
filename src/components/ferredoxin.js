@@ -11,7 +11,7 @@ const el = `<?xml version="1.0" encoding="UTF-8"?>
       <path d="M854.896,226.945 C845.475,226.945 837.837,219.307 837.837,209.886 C837.837,200.464 845.475,192.827 854.896,192.827 C864.318,192.827 871.956,200.464 871.956,209.886 C871.956,219.307 864.318,226.945 854.896,226.945 z" fill-opacity="0" stroke="#3B3838" stroke-width="1"/>
     </g>
     <text transform="matrix(1, 0, 0, 1, 882.063, 238.536)">
-      <tspan x="-12.253" y="4.689" font-family="ArialMT" font-size="21" fill="#000000">Fd</tspan>
+      <tspan x="-12.253" y="4.689" font-family="Arial,ArialMT" font-size="21" fill="#000000">Fd</tspan>
     </text>
   </g>
 </svg>`;

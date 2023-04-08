@@ -18,7 +18,7 @@ const el = `<?xml version="1.0" encoding="UTF-8"?>
     </g>
     <g id="qi">
       <text transform="matrix(1, 0, 0, 1, 84.384, 180.776)">
-        <tspan x="-10.008" y="7.455" font-family="ArialMT" font-size="24" fill="#000000">qI</tspan>
+        <tspan x="-10.008" y="7.455" font-family="Arial,ArialMT" font-size="24" fill="#000000">qI</tspan>
       </text>
       <g>
         <path d="M114.6,163.212 L144.5,139.069" fill-opacity="0" stroke="#EF2D37" stroke-width="4" stroke-dasharray="8,8"/>
@@ -31,7 +31,7 @@ const el = `<?xml version="1.0" encoding="UTF-8"?>
         <path d="M205.418,405.643 L204.892,399.898 L197.949,411.674 L210.923,407.367 z" fill="#EF2D37" fill-opacity="1" stroke="#EF2D37" stroke-width="4" stroke-opacity="1"/>
       </g>
       <text transform="matrix(1, 0, 0, 1, 181.616, 428.793)">
-        <tspan x="-14.678" y="7.455" font-family="ArialMT" font-size="24" fill="#000000">qE</tspan>
+        <tspan x="-14.678" y="7.455" font-family="Arial,ArialMT" font-size="24" fill="#000000">qE</tspan>
       </text>
     </g>
   </g>

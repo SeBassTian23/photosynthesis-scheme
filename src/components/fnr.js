@@ -16,15 +16,14 @@ const el = `<?xml version="1.0" encoding="UTF-8"?>
         <path d="M940.627,92.514 L941.828,97.416 L946.307,86.325 L935.639,91.736 z" fill="#41719C" fill-opacity="1" stroke="#41719C" stroke-width="3" stroke-opacity="1"/>
       </g>
       <text transform="matrix(1, 0, 0, 1, 828.651, 66.755)">
-        <tspan x="-38.402" y="8" font-family="ArialMT" font-size="24" fill="#000000">NADP</tspan>
-        <tspan x="28.277" y="8" font-family="LucidaGrande" font-size="24" fill="#000000">⁺</tspan>
+        <tspan x="-38.402" y="8" font-family="Arial,ArialMT" font-size="24" fill="#000000">NADP⁺</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 963.656, 66.755)">
-        <tspan x="-42.006" y="7.212" font-family="ArialMT" font-size="24" fill="#000000">NADPH</tspan>
+        <tspan x="-42.006" y="7.212" font-family="Arial,ArialMT" font-size="24" fill="#000000">NADPH</tspan>
       </text>
     </g>
     <text transform="matrix(1, 0, 0, 1, 917.873, 162.576)">
-      <tspan x="-21.579" y="4.689" font-family="ArialMT" font-size="21" fill="#000000">FNR</tspan>
+      <tspan x="-21.579" y="4.689" font-family="Arial,ArialMT" font-size="21" fill="#000000">FNR</tspan>
     </text>
   </g>
 </svg>`;

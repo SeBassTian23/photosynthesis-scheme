@@ -8,7 +8,7 @@ const el = `<?xml version="1.0" encoding="UTF-8"?>
   <g id="lumen" transform="translate(0, 0)">
     <path d="M-0,376.004 L1400,376.004 L1400,600 L-0,600 L-0,376.004 z" fill="#FFE5E5"/>
     <text transform="matrix(1, 0, 0, 1, 1358.84, 392.945)">
-      <tspan x="-30.04" y="7.212" font-family="ArialMT" font-size="24" fill="#000000">lumen</tspan>
+      <tspan x="-30.04" y="7.212" font-family="Arial,ArialMT" font-size="24" fill="#000000">lumen</tspan>
     </text>
   </g>
 </svg>`;

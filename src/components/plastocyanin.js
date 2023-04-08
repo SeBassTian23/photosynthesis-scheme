@@ -12,12 +12,11 @@ const el = `<?xml version="1.0" encoding="UTF-8"?>
     </g>
     <g id="cofactor">
       <text transform="matrix(1, 0, 0, 1, 774.896, 438.433)">
-        <tspan x="-14.586" y="5.378" font-family="ArialMT" font-size="10" fill="#000000">Cu</tspan>
-        <tspan x="-1.586" y="2.078" font-family="ArialMT" font-size="6" fill="#000000">2+</tspan>
+        <tspan x="-14.586" y="5.378" font-family="Arial,ArialMT" font-size="10" fill="#000000">Cu²⁺</tspan>
       </text>
     </g>
     <text transform="matrix(1, 0, 0, 1, 768.896, 480.233)">
-      <tspan x="-14.586" y="5.378" font-family="ArialMT" font-size="21" fill="#000000">Pc</tspan>
+      <tspan x="-14.586" y="5.378" font-family="Arial,ArialMT" font-size="21" fill="#000000">Pc</tspan>
     </text>
   </g>
 </svg>`;

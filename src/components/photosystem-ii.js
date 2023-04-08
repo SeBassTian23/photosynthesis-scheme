@@ -26,21 +26,17 @@ const el = `<?xml version="1.0" encoding="UTF-8"?>
     </g>
     <g id="water-split">
       <text transform="matrix(1, 0, 0, 1, 352.14, 464.889)">
-        <tspan x="-23.062" y="8.212" font-family="ArialMT" font-size="24" fill="#000000">H</tspan>
-        <tspan x="-5.73" y="8.212" font-family="LucidaGrande" font-size="24" fill="#000000">₂</tspan>
-        <tspan x="4.395" y="8.212" font-family="ArialMT" font-size="24" fill="#000000">O</tspan>
+        <tspan x="-23.062" y="8.212" font-family="Arial,ArialMT" font-size="24" fill="#000000">H₂O</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 421.816, 464.889)">
-        <tspan x="-14.396" y="8.212" font-family="ArialMT" font-size="24" fill="#000000">O</tspan>
-        <tspan x="4.271" y="8.212" font-family="LucidaGrande" font-size="24" fill="#000000">₂</tspan>
+        <tspan x="-14.396" y="8.212" font-family="Arial,ArialMT" font-size="24" fill="#000000">O₂</tspan>
       </text>
       <g>
         <path d="M353.376,448.164 C353.363,428.717 367.707,412.942 385.413,412.93 C400.189,412.92 412.638,423.889 416.362,438.821" fill-opacity="0" stroke="#3A658B" stroke-width="3"/>
         <path d="M416.362,438.821 L411.854,436.551 L417.381,447.159 L420.192,435.532 z" fill="#3A658B" fill-opacity="1" stroke="#3A658B" stroke-width="3" stroke-opacity="1"/>
       </g>
       <text transform="matrix(1, 0, 0, 1, 503.931, 492.677)">
-        <tspan x="-13.729" y="8" font-family="ArialMT" font-size="24" fill="#000000">H</tspan>
-        <tspan x="3.604" y="8" font-family="LucidaGrande" font-size="24" fill="#000000">⁺</tspan>
+        <tspan x="-13.729" y="8" font-family="Arial,ArialMT" font-size="24" fill="#000000">H⁺</tspan>
       </text>
     </g>
     <text transform="matrix(1, 0, 0, 1, 384.586, 374.195)" id="photosystem-ii-center">
@@ -49,27 +45,26 @@ const el = `<?xml version="1.0" encoding="UTF-8"?>
     </text>
     <g id="cofactors">
       <text transform="matrix(1, 0, 0, 1, 371.868, 391.909)">
-        <tspan x="-5.657" y="1.5" font-family="ArialMT" font-size="10" fill="#000000">Y</tspan>
-        <tspan x="1.013" y="1.5" font-family="ArialMT" font-size="6" fill="#000000">z</tspan>
+        <tspan x="-5.657" y="1.5" font-family="Arial,ArialMT" font-size="10" fill="#000000">Y</tspan>
+        <tspan x="1.013" y="1.5" font-family="Arial,ArialMT" font-size="6" fill="#000000">z</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 398.541, 403.233)">
-        <tspan x="-15.447" y="2.5" font-family="ArialMT" font-size="10" fill="#000000">CaMn</tspan>
-        <tspan x="11.228" y="2.5" font-family="LucidaGrande" font-size="10" fill="#000000">₄</tspan>
+        <tspan x="-15.447" y="2.5" font-family="Arial,ArialMT" font-size="10" fill="#000000">CaMn₄</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 391.413, 317.33)">
-        <tspan x="-5.89" y="1.5" font-family="ArialMT" font-size="10" fill="#000000">Q</tspan>
-        <tspan x="1.888" y="1.5" font-family="ArialMT" font-size="6" fill="#000000">B</tspan>
+        <tspan x="-5.89" y="1.5" font-family="Arial,ArialMT" font-size="10" fill="#000000">Q</tspan>
+        <tspan x="1.888" y="1.5" font-family="Arial,ArialMT" font-size="6" fill="#000000">B</tspan>
       </text>
       <path d="M382.041,400.106 L377.867,396.458" fill-opacity="0" stroke="#000000" stroke-width="1"/>
       <path d="M374.577,365.344 L367.782,356.562" fill-opacity="0" stroke="#000000" stroke-width="1"/>
       <path d="M364.772,344.205 L367.782,330.704" fill-opacity="0" stroke="#000000" stroke-width="1"/>
       <path d="M375.812,323.083 L384.362,319.051" fill-opacity="0" stroke="#000000" stroke-width="1"/>
       <text transform="matrix(1, 0, 0, 1, 365.733, 325.923)">
-        <tspan x="-5.89" y="1.5" font-family="ArialMT" font-size="10" fill="#000000">Q</tspan>
-        <tspan x="1.888" y="1.5" font-family="ArialMT" font-size="6" fill="#000000">A</tspan>
+        <tspan x="-5.89" y="1.5" font-family="Arial,ArialMT" font-size="10" fill="#000000">Q</tspan>
+        <tspan x="1.888" y="1.5" font-family="Arial,ArialMT" font-size="6" fill="#000000">A</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 369.095, 352.397)">
-        <tspan x="-11.898" y="1.5" font-family="ArialMT" font-size="10" fill="#000000">Pheo</tspan>
+        <tspan x="-11.898" y="1.5" font-family="Arial,ArialMT" font-size="10" fill="#000000">Pheo</tspan>
       </text>
       <path d="M377.53,386.298 L383.103,381.544" fill-opacity="0" stroke="#000000" stroke-width="1"/>
     </g>
@@ -79,7 +74,7 @@ const el = `<?xml version="1.0" encoding="UTF-8"?>
     </g>
     <g id="label">
       <text transform="matrix(1, 0, 0, 1, 379.998, 574.538)">
-        <tspan x="-69.445" y="4.5" font-family="ArialMT" font-size="21" fill="#000000">Photosystem II</tspan>
+        <tspan x="-69.445" y="4.5" font-family="Arial,ArialMT" font-size="21" fill="#000000">Photosystem II</tspan>
       </text>
     </g>
   </g>
