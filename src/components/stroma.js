@@ -58,5 +58,5 @@ export const settings = () => {
 }
 
 export const legend = () => {
-  return ``
+  return `The stroma is the space between the thylakoid membrane and the chloroplast envelope.`
 }

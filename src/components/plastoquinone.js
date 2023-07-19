@@ -62,5 +62,5 @@ export const settings = () => {
 }
 
 export const legend = () => {
-  return `Plastoquinone/Plastoquinol (PQ/PQH₂)`
+  return `Plastoquinone (PQ) is reduced to plastoquinol (PQH₂) at the Qʙ side of PSII. The electrons are shuttled to the cytochrome <em>b₆f</em> complex.`
 }

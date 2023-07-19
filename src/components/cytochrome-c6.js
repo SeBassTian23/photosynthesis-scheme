@@ -75,5 +75,5 @@ export const settings = () => {
 }
 
 export const legend = () => {
-  return `Cytochrome c₆ (Cyt c₆)`
+  return `Cytochrome c₆ (Cyt c₆) is a small, heme (Feᴵᴵ) binding, luminal protein, transferring electrons from cytochrome <em>f</em> to P₇₀₀.`
 }

@@ -73,5 +73,5 @@ export const settings = () => {
 }
 
 export const legend = () => {
-  return `Plastocyanin (Pc) is a copper (Cu²⁺) containing, lumen localized protein, transfering electrons from cytochrome <em>f</em> to P₇₀₀.`
+  return `Plastocyanin (Pc) is a small copper (Cu²⁺) containing luminal protein that transfers electrons from cytochrome <em>f</em> to P₇₀₀.`
 }

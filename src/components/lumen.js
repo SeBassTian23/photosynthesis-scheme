@@ -52,5 +52,5 @@ export const settings = () => {
 }
 
 export const legend = () => {
-  return ``
+  return `The lumen is enclosed by the thylakoid membrane.`
 }

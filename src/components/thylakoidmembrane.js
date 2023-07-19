@@ -48,5 +48,5 @@ export const settings = () => {
 }
 
 export const legend = () => {
-  return ``
+  return `The thylakoid membrane is a system of interconnected membranes organized in grana stacks and stroma lamellae and harboring the complexes of the photosynthetic machinery.`
 }

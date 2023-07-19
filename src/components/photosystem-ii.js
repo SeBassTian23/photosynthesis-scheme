@@ -184,5 +184,5 @@ export const settings = () => {
 }
 
 export const legend = () => {
-  return ``
+  return `Photosystem II (PSII), with its reaction center (P₆₈₀) oxidizes water when exited, producing electrons (e⁻) and protons (H⁺). The protons are deposited into the lumen and the electrons are transferred to the plastoquinone pool.`
 }

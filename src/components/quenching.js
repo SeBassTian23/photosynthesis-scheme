@@ -92,5 +92,5 @@ export const settings = () => {
 }
 
 export const legend = () => {
-  return ``
+  return `The red, dashed arrows represent a subset of possible quenching mechanisms including qE and qI as well as the induction of qE through lumen acidification.`
 }

@@ -76,5 +76,5 @@ export const settings = () => {
 }
 
 export const legend = () => {
-  return `Plastid terminal oxidase (PTOX)`
+  return `The luminal plastid terminal oxidase (PTOX) can act as an electron sink by reducing oxygen (O₂) to water (H₂O).`
 }

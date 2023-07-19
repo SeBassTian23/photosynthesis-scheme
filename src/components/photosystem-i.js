@@ -167,5 +167,5 @@ export const settings = () => {
 }
 
 export const legend = () => {
-  return ``
+  return `The reaction center of PSI (P₇₀₀) oxidizes the luminal electron donor PC or cytochrome c₆ after being excited and transfers the electron to the stromal acceptor, ferredoxin (Fd).`
 }

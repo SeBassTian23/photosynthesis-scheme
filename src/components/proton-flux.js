@@ -124,5 +124,5 @@ export const settings = () => {
 }
 
 export const legend = () => {
-  return `Ligh blue arrows indicate the transfer of protons (H⁺)`
+  return `Light blue arrows indicate the transfer of protons (H⁺).`
 }

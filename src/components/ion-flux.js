@@ -83,5 +83,5 @@ export const settings = () => {
 }
 
 export const legend = () => {
-  return ``
+  return `The ions Ca⁺ and K⁺ act as counter ions to the initial build-up of the proton gradient (H⁺) allowing to store part of the <em>pmf</em> as ΔΨ (electric component of <em>pmf</em>) during steady-state.`
 }

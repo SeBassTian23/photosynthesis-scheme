@@ -114,5 +114,5 @@ export const settings = () => {
 }
 
 export const legend = () => {
-  return `Orange arrows indicate the transfer of electrons (e⁻)`
+  return `Orange arrows indicate the transfer of electrons (e⁻).`
 }

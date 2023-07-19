@@ -116,6 +116,5 @@ export const settings = () => {
 }
 
 export const legend = () => {
-  return `Zeaxanthin epoxidase (ZE) Violaxanthin de-epoxidase (VDE) Violaxanthin (V) 
-  Zeaxanthin (Z) Psbs`
+  return `The inducible part of non-photochemical quenching (NPQ), qE, is mediated through PsbS and the xanthophyll cycle. With lumen acidification, the violaxanthin de-epoxidase (VDE) is activated, converting violaxanthin (V) into zeaxanthin (Z) and the sensor PsbS is protonated activating the quenching of excess excitation energy.`
 }

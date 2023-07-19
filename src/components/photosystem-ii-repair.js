@@ -149,5 +149,5 @@ export const settings = () => {
 }
 
 export const legend = () => {
-  return `Core subunit of Photosystem II (D1)`
+  return `Photodamaged PSII undergoes repair in a multi-step process in which the PSII core moves from the grana to the stroma thylakoids. The damaged D1 subunit is replaced and the PSII monomers are migrating back to the grana thylakoids for dimerization and supercomplex assembly.`
 }

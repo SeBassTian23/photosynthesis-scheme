@@ -385,10 +385,7 @@ export default class Photosynthesis {
       }
     }
 
-    // Dark blue arrow indicate reactions creating products of Photosynthesis including O₂,
-    // NADPH and ATP. 
-
-    return `The photosynthetic machinery in higher plants and green algae (with exceptions).
+    return `<em>The photosynthetic machinery in higher plants and most green algae</em>.
     ${textblocksArray.join(' ')}`;
   }
 }

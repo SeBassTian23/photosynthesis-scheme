@@ -127,5 +127,5 @@ export const settings = () => {
 }
 
 export const legend = () => {
-  return ``
+  return `The cytochrome <em>b₆f</em> complex oxidizes PQH₂ to PQ while pumping protons from the stroma into the lumen in the so-called Q-cycle. The electrons from PQH₂ are then transferred via the cytochrome <em>f</em> subunit to the luminal electron donor for Photosystem I (PSI).`
 }

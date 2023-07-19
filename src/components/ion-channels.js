@@ -94,5 +94,5 @@ export const settings = () => {
 }
 
 export const legend = () => {
-  return ``
+  return `Transthylakoid ion channels allow in influx and efflux of ions between the stroma and lumen.`
 }

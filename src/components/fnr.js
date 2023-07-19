@@ -82,5 +82,5 @@ export const settings = () => {
 }
 
 export const legend = () => {
-  return `Ferredoxin NADP⁺ oxidoreductase (FNR)`
+  return `The Ferredoxin NADP⁺ oxidoreductase (FNR) picks up an electron from Fd and reduces NADP⁺ to NADPH.`
 }
