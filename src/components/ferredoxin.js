@@ -64,5 +64,5 @@ export const settings = () => {
 }
 
 export const legend = () => {
-  return `Ferredoxin (Fd) binds to the stromal acceptor side of PSI where it is reduced and, during linear electron flow, the electron is transferred onto Ferredoxin NADP⁺ oxidoreductase (FNR).`
+  return `Ferredoxin (Fd) binds to the stromal acceptor side of PSI where it is reduced and, during linear electron flow, the electron is transferred onto ferredoxin NADP⁺ oxidoreductase (FNR).`
 }
