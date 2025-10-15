@@ -1,6 +1,6 @@
 {
   "name": "photosynthesis-scheme",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Generate a scheme of the photosynthetic machinery for presentations or slides.",
   "main": "index.js",
   "scripts": {
@@ -17,18 +17,15 @@
   ],
   "author": "Sebastian Kuhlgert <sebastian.kuhlgert@gmail.com>",
   "license": "MIT",
-  "dependencies": {
-    "bootstrap": "^5.2.3",
-    "@svgdotjs/svg.js": "^3.1.2"
-  },
   "devDependencies": {
     "@babel/preset-env": "^7.20.2",
+    "@svgdotjs/svg.js": "^3.2.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^9.1.2",
     "babel-preset-env": "^1.7.0",
-    "fs-jetpack": "^5.1.0",
     "lodash": "^4.17.21",
+    "raw-loader": "^4.0.2",
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.13.2"

@@ -2,22 +2,13 @@
  * Lumen
  */
 
-const el = `<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="1400" height="600" viewBox="0, 0, 1400, 600">
-  <g id="lumen" transform="translate(0, 0)">
-    <path d="M-0,376.004 L1400,376.004 L1400,600 L-0,600 L-0,376.004 z" fill="#FFE5E5"/>
-    <text transform="matrix(1, 0, 0, 1, 1358.84, 392.945)">
-      <tspan x="-30.04" y="7.212" font-family="Arial,ArialMT" font-size="24" fill="#000000">lumen</tspan>
-    </text>
-  </g>
-</svg>`;
-
+import { SVG } from "@svgdotjs/svg.js";
+import svgContent from '!!raw-loader!../svgs/lumen.svg';
 
 const lumen = ({ color = '#FFE5E5', label = 'lumen', showLabel = true } = {}) => {
 
   let draw = SVG();
-  draw.svg(el);
+  draw.svg(svgContent);
 
   let path = draw.findOne('#lumen path');
   path.fill(color)
