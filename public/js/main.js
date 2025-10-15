@@ -1,12 +1,21 @@
-let applyUpdate = (settings) => {
+let applyUpdate = () => {
+
+  let settings = photosynthesis.settings
+
   for (let name in settings) {
-    let el = document.querySelector(`input[name="${name}"]`)
-    if (!el)
-      continue;
-    if (el.checked !== null)
-      el.checked = settings[name] == 'true' ? true : false;
-    else
-      el.value = settings[name]
+    const options = Object.entries(settings[name])
+    for(let option of options){
+      // find elements
+      let el = document.querySelector(`input[name="${name}.${option[0]}"]`)
+      if (!el)
+        continue;
+      if (el.type == 'checkbox' && el.checked !== null){
+        el.checked = option[1] ? true : false;
+      }
+      else{
+        el.value = option[1]
+      }
+    }
   }
   document.querySelector('#svg').innerHTML = photosynthesis.build();
   document.querySelector('#svg svg').classList.add("img-fluid");
@@ -18,9 +27,8 @@ let applyUpdate = (settings) => {
 const photosynthesis = new Photosynthesis();
 
 // Figure container
-document.querySelector('#svg').innerHTML = photosynthesis.build();
+applyUpdate();
 
-applyUpdate(Object.fromEntries([]))
 document.querySelector('#references').innerHTML = photosynthesis.referencesHTML();
 
 // Figure settings
@@ -40,8 +48,25 @@ document.querySelector('#settings form').addEventListener("change", (event) => {
       formData.append(el.name, false)
   });
 
-  photosynthesis.update(Object.fromEntries(formData));
-  applyUpdate(Object.fromEntries(formData));
+  let settings = {}
+  for (const [key, value] of formData.entries()) {
+    const keys = key.split('.');
+
+    // Create category key, if it doesn't exist
+    if( settings[keys[0]] === undefined)
+      settings[keys[0]] = {}
+
+    // Add key and value to category
+    if(value === "false" || value === "true" || value === "null")
+      settings[keys[0]][keys[1]] = JSON.parse(value);
+    else if(!isNaN(value) && value.trim() !== '')
+      settings[keys[0]][keys[1]] = Number(value);
+    else
+      settings[keys[0]][keys[1]] = value;
+  }
+
+  photosynthesis.settings = settings;
+  applyUpdate();
 });
 
 document.querySelector('#download-svg').addEventListener('click', (event) => {
@@ -84,21 +109,13 @@ document.querySelector('#download-png').addEventListener('click', (event) => {
       a.href = dataURL;
       a.dispatchEvent(my_evt);
     }
-    // canvas.parentNode.removeChild(canvas);
   }
 });
 
 document.querySelector('#download-json').addEventListener('click', (event) => {
   event.preventDefault();
 
-  const formData = new FormData(document.querySelector('#settings form')) || {}
-
-  document.querySelectorAll('#settings form input[type=checkbox]').forEach(el => {
-    if (!el.checked)
-      formData.append(el.name, false)
-  });
-
-  let settings = JSON.stringify(Object.fromEntries(formData), null, 2);
+  let settings = JSON.stringify(photosynthesis.settings, null, 2);
 
   let blob = new Blob([settings], { type: 'text/json;charset=utf-8' });
   let URL = window.URL || window.webkitURL || window;
@@ -122,8 +139,8 @@ document.querySelector('#import-json').addEventListener('change', (event) => {
     reader.readAsText(file);
     reader.onload = function () {
       let importedSettings = JSON.parse(reader.result);
-      photosynthesis.update(importedSettings);
-      applyUpdate(importedSettings);
+      photosynthesis.settings = importedSettings;
+      applyUpdate();
     };
     reader.onerror = function () {
       console.log(reader.error);
@@ -133,8 +150,8 @@ document.querySelector('#import-json').addEventListener('change', (event) => {
 
 document.querySelector('#presets-selector').addEventListener('change', (event) => {
   photosynthesis.reset();
-  photosynthesis.update(photosynthesis.getPreset(event.target.value));
-  applyUpdate(photosynthesis.getPreset(event.target.value));
+  photosynthesis.applyPreset(event.target.value);
+  applyUpdate();
 });
 
 document.querySelector('#reset-form').addEventListener('click', (event) => {
@@ -142,8 +159,12 @@ document.querySelector('#reset-form').addEventListener('click', (event) => {
   document.querySelector('#settings form').reset();
   document.querySelector('#presets-selector').value = '-1';
   photosynthesis.reset();
-  document.querySelector('#svg').innerHTML = photosynthesis.build();
-  applyUpdate(Object.fromEntries([]));
+  document.querySelectorAll('#settings .accordion-header input[name$=".show"]').forEach( el => {
+    let cat = el.name.split('.')[0];
+    el.checked = photosynthesis.settings[cat].show
+    el.dispatchEvent(new Event('change', { bubbles: true }))
+  })
+  applyUpdate();
 });
 
 document.querySelector('#toggleBtn').addEventListener('click', (event) => {
