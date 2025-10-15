@@ -1,5 +1,8 @@
-import set from 'lodash/set'
+import {SVG} from '@svgdotjs/svg.js'
 import get from 'lodash/get'
+import isEqual from 'lodash/isEqual'
+import isPlainObject from 'lodash/isPlainObject'
+import merge from 'lodash/merge'
 import cloneDeep from 'lodash/cloneDeep'
 import settings, { menu, layers } from './constants/settings'
 import references from './constants/references'
@@ -26,14 +29,21 @@ import ionFlux, { legend as ionFluxLegend } from './components/ion-flux'
 import quenching, { legend as quenchingLegend } from './components/quenching'
 
 export default class Photosynthesis {
+  #menu;
+  #layers;
+  #settings;
+  #initialSettings;
+  #componentSettings;
+  #presets;
   constructor(width, height) {
     this.width = width || 1400;
     this.height = height || 600;
-    this.menu = menu || {}
-    this.layers = layers || []
-    this.settings = cloneDeep(settings) || []
-    this.settingsInitial = cloneDeep(settings)
-    this.presets = presets;
+    this.#componentSettings = cloneDeep(settings);
+    this.#initialSettings = this.#settingsJSON();
+    this.#settings = this.#initialSettings;
+    this.#menu = menu || {};
+    this.#layers = layers || [];
+    this.#presets = presets;
     this.references = references;
   }
   build() {
@@ -44,12 +54,12 @@ export default class Photosynthesis {
     draw.viewbox(`0 0 ${this.width} ${this.height}`)
 
     // Apply options
-    for (let i in this.layers) {
-      let key = this.settings.findIndex(itm => itm.id == this.layers[i]);
+    for (let i in this.#layers) {
+      let key = this.#layers[i]
       if (this.settings[key] && this.settings[key].show) {
-        var options = this.parseOptions(this.settings[key].options)
+        let options = {...this.settings[key]}
 
-        switch (this.settings[key].id) {
+        switch (key) {
           case 'stroma':
             draw.svg(stroma({ ...options }));
             break;
@@ -117,50 +127,27 @@ export default class Photosynthesis {
     // Final SVG
     return draw.svg();
   }
-  parseOptions(obj) {
-    if (obj === undefined)
-      return {}
-    let options = {}
-    obj.forEach(itm => { options[itm.name] = itm.value; return options; })
-    return options;
+  get settingsSave() {
+    const current = this.settings;
+    const initial = this.#initialSettings;
+    
+    return this.#getNestedChanges(current, initial);
+  }
+  set settings(obj) {
+    this.#settings = merge(this.#settings, obj)
+  }
+  get settings() {
+    return this.#settings;
   }
   reset() {
-    return this.settings = cloneDeep(this.settingsInitial);
-  }
-  update(obj) {
-    let current = cloneDeep(this.settings);
-    if (!Array.isArray(obj)) {
-      for (let key in obj) {
-        // Parse Value
-        let value = obj[key];
-        if (value == 'true')
-          value = true
-        if (value == 'false')
-          value = false
-
-        // Modify Key
-        let modkey = key.split('.');
-        let idx = current.findIndex(itm => itm.id == modkey[0]);
-
-        modkey = modkey.slice(1);
-
-        if (modkey[0] !== undefined && modkey[0].match(/^options\[/)) {
-          modkey = modkey.slice(0, -1).join('.') + '.value';
-        }
-        else {
-          modkey = modkey.join('.');
-        }
-        set(current[idx], modkey, value);
-      }
-    }
-    this.settings = current;
+    this.#settings = cloneDeep(this.#initialSettings);
   }
   settingsHTML() {
 
     let elCount = 0;
     let html = '<form id="settingsform">'
 
-    for (let header in this.menu) {
+    for (let header in this.#menu) {
 
       let uid = "ps-" + crypto.randomUUID();
       let accordionid = "ps-" + crypto.randomUUID();
@@ -174,38 +161,47 @@ export default class Photosynthesis {
       // data-bs-parent="#selector"
       html += `<div class="accordion" id="${accordionid}">`
 
-      for (let i in this.menu[header]) {
+      for (let i in this.#menu[header]) {
 
-        let idx = this.settings.findIndex(itm => itm.id == this.menu[header][i]);
+        let idx = this.#componentSettings.findIndex(itm => itm.id == this.#menu[header][i]);
 
         if (idx == -1)
           continue;
 
-        if (this.settings[idx].show === undefined && this.settings[idx].options === undefined)
+        if (this.#componentSettings[idx].show === undefined && this.#componentSettings[idx].options === undefined)
           continue;
 
         html += `<div class="accordion-item">
           <h2 class="accordion-header" id="heading${idx}">
             <button class="accordion-button collapsed ps-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${idx}" aria-expanded="${elCount === 0 ? 'true' : 'false'}" aria-controls="collapse${idx}">
-            ${this.settings[idx].headerTitle}
+            ${this.#componentSettings[idx].headerTitle}
             </button>
-            ${this.elementInputSwitch([this.settings[idx].id, 'show'].join('.'), this.settings[idx].show, ``)}
+            ${this.#elementInputSwitch([this.#componentSettings[idx].id, 'show'].join('.'), {value: this.#componentSettings[idx].show, label: '', disabled: this.#componentSettings[idx].disabled || false} )}
           </h2>
           <div id="collapse${idx}" class="accordion-collapse collapse" aria-labelledby="heading${idx}" data-bs-parent="#${accordionid}">
             <div class="accordion-body">`;
 
-        if (this.settings[idx].options !== undefined && this.settings[idx].options.length > 0) {
-          for (let i in this.settings[idx].options) {
-            let option = this.settings[idx].options[i];
-            let name = [this.settings[idx].id, `options[${i}]`, option.name].join('.');
-            if (option.type == 'color')
-              html += this.elementInputColor(name, option.value, option.label)
-            if (option.type == 'text')
-              html += this.elementInputText(name, option.value, option.label)
-            if (option.type == 'check')
-              html += this.elementInputCheck(name, option.value, option.label)
-            if (option.type == 'range')
-              html += this.elementInputRange(name, option.value, option.label, option.step, option.min, option.max)
+        if (this.#componentSettings[idx].options !== undefined && this.#componentSettings[idx].options.length > 0) {
+          for (let i in this.#componentSettings[idx].options) {
+            let option = this.#componentSettings[idx].options[i];
+            let name = [this.#componentSettings[idx].id, option.name].join('.');
+            switch(option.type){
+              case('color'):
+                html += this.#elementInputColor(name, {...option})
+                break
+              case('text'):
+                html += this.#elementInputText(name, {...option})
+                break
+              case('check'):
+                html += this.#elementInputCheck(name, {...option})
+                break
+              case('range'):
+                html += this.#elementInputRange(name, {...option})
+                break
+              case('separator'):
+                html += `<div class="separator"><hr></div>`
+                break                
+            }
           }
         }
         else {
@@ -225,9 +221,11 @@ export default class Photosynthesis {
 
     return html;
   }
-  getPreset(id) {
-    let preset = get(this.presets, id, {});
-    return preset.settings || {}
+  applyPreset(id) {
+    this.#settings = get(this.#presets, id)?.settings || {}
+  }
+  get presets(){
+    return this.#presets;
   }
   presetsHTML() {
     let html = `<select class="form-select" aria-label="Default select example" id="presets-selector">`;
@@ -242,36 +240,73 @@ export default class Photosynthesis {
 
     return html;
   }
-  elementInputCheck(name = 'check', value = true, label = 'label') {
+  #getNestedChanges(obj1, obj2) {
+    const changes = {};
+    
+    for (const key in obj2) {
+      const val1 = obj1?.[key];
+      const val2 = obj2[key];
+      
+      if (isPlainObject(val1) && isPlainObject(val2)) {
+        // Recursively check nested objects
+        const nestedChanges = this.#getNestedChanges(val1, val2);
+        if (Object.keys(nestedChanges).length > 0) {
+          changes[key] = nestedChanges;
+        }
+      } else if (!isEqual(val1, val2)) {
+        changes[key] = val2;
+      }
+    }
+    
+    return changes;
+  }
+  #settingsJSON(){
+    let s = {}
+    for(let i in this.#componentSettings){
+      s[this.#componentSettings[i].id] = {}
+      for(let a of Object.entries(this.#componentSettings[i]) ){
+        if(!['id','disabled','options','headerTitle'].includes(a[0]))
+          s[this.#componentSettings[i].id][a[0]] = a[1]
+        if(a[0] === 'options'){
+          for(let b of a[1]){
+            if(b.name)
+              s[this.#componentSettings[i].id][b.name] = b.value
+          }
+        }
+      }
+    }
+    return s
+  }
+  #elementInputCheck(name = 'check', {value = true, label = 'label'} = {}) {
     let id = "ps-" + crypto.randomUUID();
     return `<div class="form-check mb-1">
       <input class="form-check-input" name="${name}" type="checkbox" value="${true}" id="${id}" ${value ? 'checked' : ''}>
       <label class="form-check-label" for="${id}">${label}</label>
     </div>`;
   }
-  elementInputSwitch(name = 'switch', value = true, label = 'label') {
+  #elementInputSwitch(name = 'switch', {value = true, label = 'label', disabled = false} = {}) {
     let id = "ps-" + crypto.randomUUID();
     return `<div class="form-check form-switch fs-6" style="position:relative; margin:-2.1rem .5rem .6rem .5rem; z-index:10; width:2em;">
-    <input class="form-check-input" type="checkbox" role="switch" name="${name}" value="${true}" id="${id}" ${value ? 'checked' : ''}>
+    <input class="form-check-input" type="checkbox" role="switch" name="${name}" value="${true}" id="${id}" ${value ? 'checked' : ''} ${disabled ? 'disabled' : ''} switch>
     <label class="form-check-label" for="${id}">${label}</label>
   </div>`
 
   }
-  elementInputText(name = 'text', value = 'Text', label = 'label') {
+  #elementInputText(name = 'text', {value = 'Text', label = 'label'} = {}) {
     let id = "ps-" + crypto.randomUUID();
     return `<div class="mb-1">
       <label for="${id}" class="form-label">${label}</label>
       <input type="text" class="form-control form-control" name="${name}" id="${id}" placeholder="${value}" value="${value}">
     </div>`;
   }
-  elementInputColor(name = 'color', value = '#000000', label = 'label') {
+  #elementInputColor(name = 'color', {value = '#000000', label = 'label'} = {}) {
     let id = "ps-" + crypto.randomUUID();
     return `<div class="d-flex">
       <input type="color" class="form-control form-control-color" name="${name}" id="${id}" value="${value}" title="Choose ${label} color">
       <label for="${id}" class="col-sm-9 col-form-label">${label}</label>
     </div>`;
   }
-  elementInputRange(name = 'range', value = -1, label = 'label', step = 1, min = 0, max = 1) {
+  #elementInputRange(name = 'range', {value = -1, label = 'label', step = 1, min = 0, max = 1} = {}) {
     let id = "ps-" + crypto.randomUUID();
     return `<div class="mt-1">
     <label for="${id}" class="form-label" style="margin-bottom:-1.5rem">
@@ -296,89 +331,68 @@ export default class Photosynthesis {
     let textblocks = {}
     let textblocksArray = []
 
-    for (let i in this.layers) {
-      let key = this.settings.findIndex(itm => itm.id == this.layers[i]);
+    for (let i in this.#layers) {
+      let key = this.#layers[i]
       if (this.settings[key] && this.settings[key].show) {
-
-        switch (this.settings[key].id) {
+        switch (key) {
           case 'stroma':
-            textblocks[this.settings[key].id] = stromaLegend()
             textblocksArray.push(stromaLegend())
             break;
           case 'thylakoidmembrane':
-            textblocks[this.settings[key].id] = thylakoidmembraneLegend()
             textblocksArray.push(thylakoidmembraneLegend())
             break;
           case 'lumen':
-            textblocks[this.settings[key].id] = lumenLegend()
             textblocksArray.push(lumenLegend())
             break;
           case 'plastoquinone':
-            textblocks[this.settings[key].id] = plastoquinoneLegend()
             textblocksArray.push(plastoquinoneLegend())
             break;
           case 'plastocyanin':
-            textblocks[this.settings[key].id] = plastocyaninLegend()
             textblocksArray.push(plastocyaninLegend())
             break;
           case 'cytochrome-c6':
-            textblocks[this.settings[key].id] = cytochromeC6Legend()
             textblocksArray.push(cytochromeC6Legend())
             break;
           case 'photosystem-i':
-            textblocks[this.settings[key].id] = photosystemILegend()
             textblocksArray.push(photosystemILegend())
             break;
           case 'atpsynthase':
-            textblocks[this.settings[key].id] = atpsynthaseLegend()
             textblocksArray.push(atpsynthaseLegend())
             break;
           case 'photosystem-ii':
-            textblocks[this.settings[key].id] = photosystemIILegend()
             textblocksArray.push(photosystemIILegend())
             break;
           case 'photosystem-ii-repair':
-            textblocks[this.settings[key].id] = photosystemIIrepairLegend()
             textblocksArray.push(photosystemIIrepairLegend())
             break;
           case 'cytochrome-b6f':
-            textblocks[this.settings[key].id] = cytochromeB6fLegend()
             textblocksArray.push(cytochromeB6fLegend())
             break;
           case 'vdx':
-            textblocks[this.settings[key].id] = vdxLegend()
             textblocksArray.push(vdxLegend())
             break;
           case 'ferredoxin':
-            textblocks[this.settings[key].id] = ferredoxinLegend()
             textblocksArray.push(ferredoxinLegend())
             break;
           case 'fnr':
-            textblocks[this.settings[key].id] = fnrLegend()
             textblocksArray.push(fnrLegend())
             break;
           case 'electron-flux':
-            textblocks[this.settings[key].id] = electronFluxLegend()
             textblocksArray.push(electronFluxLegend())
             break;
           case 'proton-flux':
-            textblocks[this.settings[key].id] = protonFluxLegend()
             textblocksArray.push(protonFluxLegend())
             break;
           case 'ptox':
-            textblocks[this.settings[key].id] = ptoxLegend()
             textblocksArray.push(ptoxLegend())
             break;
           case 'ion-channels':
-            textblocks[this.settings[key].id] = ionChannelsLegend()
             textblocksArray.push(ionChannelsLegend())
             break;
           case 'ion-flux':
-            textblocks[this.settings[key].id] = ionFluxLegend()
             textblocksArray.push(ionFluxLegend())
             break;
           case 'quenching':
-            textblocks[this.settings[key].id] = quenchingLegend()
             textblocksArray.push(quenchingLegend())
             break;
         }
@@ -389,3 +403,4 @@ export default class Photosynthesis {
     ${textblocksArray.join(' ')}`;
   }
 }
+  
