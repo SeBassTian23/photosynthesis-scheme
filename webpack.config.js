@@ -9,7 +9,8 @@ module.exports = {
     library: 'Photosynthesis',
     libraryExport: 'default',
     libraryTarget: 'umd',
-    globalObject: 'this'
+    globalObject: 'this',
+    clean: false
   },
   devtool: "source-map",
   module: {
@@ -20,7 +21,13 @@ module.exports = {
         use: {
           loader: "babel-loader",
           options: {
-            presets: ["@babel/preset-env"]
+            presets: [
+              ["@babel/preset-env", {
+                targets: "> 0.25%, not dead",
+                modules: false
+              }]
+            ],
+            cacheDirectory: true
           }
         }
       },
