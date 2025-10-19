@@ -1,6 +1,6 @@
 {
   "name": "photosynthesis-scheme",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Generate a scheme of the photosynthetic machinery for presentations or slides.",
   "main": "index.js",
   "scripts": {
