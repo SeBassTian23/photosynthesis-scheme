@@ -267,6 +267,9 @@ export default class Photosynthesis {
 
     return html;
   }
+  destroy() {
+    this.#draw.remove();
+  }
   #getNestedChanges(obj1, obj2) {
     const changes = {};
     
