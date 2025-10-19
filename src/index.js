@@ -328,79 +328,78 @@ export default class Photosynthesis {
   }
   legend() {
 
-    let textblocks = {}
-    let textblocksArray = []
+    let contentBlocks = []
 
     for (let i in this.#layers) {
       let key = this.#layers[i]
       if (this.settings[key] && this.settings[key].show) {
         switch (key) {
           case 'stroma':
-            textblocksArray.push(stromaLegend())
+            contentBlocks.push(stromaLegend())
             break;
           case 'thylakoidmembrane':
-            textblocksArray.push(thylakoidmembraneLegend())
+            contentBlocks.push(thylakoidmembraneLegend())
             break;
           case 'lumen':
-            textblocksArray.push(lumenLegend())
+            contentBlocks.push(lumenLegend())
             break;
           case 'plastoquinone':
-            textblocksArray.push(plastoquinoneLegend())
+            contentBlocks.push(plastoquinoneLegend())
             break;
           case 'plastocyanin':
-            textblocksArray.push(plastocyaninLegend())
+            contentBlocks.push(plastocyaninLegend())
             break;
           case 'cytochrome-c6':
-            textblocksArray.push(cytochromeC6Legend())
+            contentBlocks.push(cytochromeC6Legend())
             break;
           case 'photosystem-i':
-            textblocksArray.push(photosystemILegend())
+            contentBlocks.push(photosystemILegend())
             break;
           case 'atpsynthase':
-            textblocksArray.push(atpsynthaseLegend())
+            contentBlocks.push(atpsynthaseLegend())
             break;
           case 'photosystem-ii':
-            textblocksArray.push(photosystemIILegend())
+            contentBlocks.push(photosystemIILegend())
             break;
           case 'photosystem-ii-repair':
-            textblocksArray.push(photosystemIIrepairLegend())
+            contentBlocks.push(photosystemIIrepairLegend())
             break;
           case 'cytochrome-b6f':
-            textblocksArray.push(cytochromeB6fLegend())
+            contentBlocks.push(cytochromeB6fLegend())
             break;
           case 'vdx':
-            textblocksArray.push(vdxLegend())
+            contentBlocks.push(vdxLegend())
             break;
           case 'ferredoxin':
-            textblocksArray.push(ferredoxinLegend())
+            contentBlocks.push(ferredoxinLegend())
             break;
           case 'fnr':
-            textblocksArray.push(fnrLegend())
+            contentBlocks.push(fnrLegend())
             break;
           case 'electron-flux':
-            textblocksArray.push(electronFluxLegend())
+            contentBlocks.push(electronFluxLegend())
             break;
           case 'proton-flux':
-            textblocksArray.push(protonFluxLegend())
+            contentBlocks.push(protonFluxLegend())
             break;
           case 'ptox':
-            textblocksArray.push(ptoxLegend())
+            contentBlocks.push(ptoxLegend())
             break;
           case 'ion-channels':
-            textblocksArray.push(ionChannelsLegend())
+            contentBlocks.push(ionChannelsLegend())
             break;
           case 'ion-flux':
-            textblocksArray.push(ionFluxLegend())
+            contentBlocks.push(ionFluxLegend())
             break;
           case 'quenching':
-            textblocksArray.push(quenchingLegend())
+            contentBlocks.push(quenchingLegend())
             break;
         }
       }
     }
 
     return `<em>The photosynthetic machinery in higher plants and most green algae</em>.
-    ${textblocksArray.join(' ')}`;
+    ${contentBlocks.join(' ')}`;
   }
 }
   
