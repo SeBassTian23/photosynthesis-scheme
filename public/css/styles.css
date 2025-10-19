@@ -59,3 +59,33 @@
 .form-range::-moz-slider-thumb {
   background: var(--bs-yellow);
 }
+
+figure {
+  width: 100%;
+  & > div > svg {
+    width: 100%;
+    height: auto;
+  }
+}
+
+figure > div > svg {
+  width: 100%;
+  height: auto;
+}
+
+#figure-legend::before {
+  content: 'Figure:';
+  font-weight: bold;
+  margin-right: .2em;
+}
+
+#svg:empty {
+  aspect-ratio: auto 1400/600;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#svg:empty::after {
+  content: "Loading…";
+}

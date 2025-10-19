@@ -1,33 +1,5 @@
-let applyUpdate = () => {
-
-  let settings = photosynthesis.settings
-
-  for (let name in settings) {
-    const options = Object.entries(settings[name])
-    for(let option of options){
-      // find elements
-      let el = document.querySelector(`input[name="${name}.${option[0]}"]`)
-      if (!el)
-        continue;
-      if (el.type == 'checkbox' && el.checked !== null){
-        el.checked = option[1] ? true : false;
-      }
-      else{
-        el.value = option[1]
-      }
-    }
-  }
-  document.querySelector('#svg').innerHTML = photosynthesis.build();
-  document.querySelector('#svg svg').classList.add("img-fluid");
-  document.querySelector('#svg svg').alt = 'Scheme of the photosynthetic machinery of higher plants.';
-  document.querySelector('#figure-legend').innerHTML = '<strong>Figure:</strong> ' + photosynthesis.legend();
-}
-
 // Initiate
-const photosynthesis = new Photosynthesis();
-
-// Figure container
-applyUpdate();
+const photosynthesis = new Photosynthesis("#svg");
 
 document.querySelector('#references').innerHTML = photosynthesis.referencesHTML();
 
@@ -36,6 +8,9 @@ document.querySelector('#settings').innerHTML = photosynthesis.settingsHTML();
 
 // Figure presets
 document.querySelector('#presets').innerHTML = photosynthesis.presetsHTML();
+
+// Initial Figure legend
+document.querySelector('#figure-legend').innerHTML = photosynthesis.legend();
 
 // Capture form changes
 document.querySelector('#settings form').addEventListener("change", (event) => {
@@ -66,7 +41,8 @@ document.querySelector('#settings form').addEventListener("change", (event) => {
   }
 
   photosynthesis.settings = settings;
-  applyUpdate();
+  photosynthesis.update();
+  document.querySelector('#figure-legend').innerHTML = photosynthesis.legend();
 });
 
 document.querySelector('#download-svg').addEventListener('click', (event) => {
@@ -115,7 +91,7 @@ document.querySelector('#download-png').addEventListener('click', (event) => {
 document.querySelector('#download-json').addEventListener('click', (event) => {
   event.preventDefault();
 
-  let settings = JSON.stringify(photosynthesis.settings, null, 2);
+  let settings = JSON.stringify(photosynthesis.settingsSave, null, 2);
 
   let blob = new Blob([settings], { type: 'text/json;charset=utf-8' });
   let URL = window.URL || window.webkitURL || window;
@@ -140,7 +116,7 @@ document.querySelector('#import-json').addEventListener('change', (event) => {
     reader.onload = function () {
       let importedSettings = JSON.parse(reader.result);
       photosynthesis.settings = importedSettings;
-      applyUpdate();
+      photosynthesis.update();
     };
     reader.onerror = function () {
       console.log(reader.error);
@@ -151,7 +127,7 @@ document.querySelector('#import-json').addEventListener('change', (event) => {
 document.querySelector('#presets-selector').addEventListener('change', (event) => {
   photosynthesis.reset();
   photosynthesis.applyPreset(event.target.value);
-  applyUpdate();
+  photosynthesis.update();
 });
 
 document.querySelector('#reset-form').addEventListener('click', (event) => {
@@ -164,7 +140,7 @@ document.querySelector('#reset-form').addEventListener('click', (event) => {
     el.checked = photosynthesis.settings[cat].show
     el.dispatchEvent(new Event('change', { bubbles: true }))
   })
-  applyUpdate();
+  photosynthesis.update();
 });
 
 document.querySelector('#toggleBtn').addEventListener('click', (event) => {
