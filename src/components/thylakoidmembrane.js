@@ -5,7 +5,7 @@
 import { SVG } from "@svgdotjs/svg.js";
 import svgContent from '!!raw-loader!../svgs/thylakoidmembrane.svg';
 
-const thylakoidmembrane = ({ color = '#DBDBDB', border = true } = {}) => {
+const thylakoidmembrane = ({ color = '#DBDBDB', border = true, lipidBilayer = true } = {}) => {
 
   let draw = SVG();
   draw.svg(svgContent);
@@ -19,6 +19,16 @@ const thylakoidmembrane = ({ color = '#DBDBDB', border = true } = {}) => {
       if(shape.attr('stroke-width') > 0)
         shape.remove()
     });
+  }
+
+  if(lipidBilayer){
+    draw.findOne('#lipid-bilayer').find('path').forEach(path => {
+      path.fill(color)
+    });
+    draw.findOne('#lipid-bilayer').css('mix-blend-mode', 'multiply');
+  }
+  else{
+    draw.findOne('#lipid-bilayer').remove();
   }
 
   return draw.findOne('svg').svg(false);
@@ -35,6 +45,7 @@ export const settings = () => {
     "options": [
       { "type": "check", "name": "border", "value": true, "label": "Border" },
       { "type": "color", "name": "color", "value": "#DBDBDB", "label": "Background" },
+      { "type": "check", "name": "lipidBilayer", "value": true, "label": "Lipid Bilayer" },
     ]
   }
 }
