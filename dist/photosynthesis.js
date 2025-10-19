@@ -19215,7 +19215,7 @@ function _buildFigure() {
     if (this.target && typeof this.target === 'string') {
       _classPrivateFieldSet(_draw, this, (0,_svgdotjs_svg_js__WEBPACK_IMPORTED_MODULE_0__.SVG)().addTo(this.target).size(this.width, this.height));
       // Add class
-      if (this.className) _classPrivateFieldGet(_draw, this).addClass('calendar-heatmap');
+      if (this.className) _classPrivateFieldGet(_draw, this).addClass(this.class);
       // Add css styles
       if (this.style) _classPrivateFieldGet(_draw, this).css(style);
     } else _classPrivateFieldSet(_draw, this, (0,_svgdotjs_svg_js__WEBPACK_IMPORTED_MODULE_0__.SVG)().size(this.width, this.height));
