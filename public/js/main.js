@@ -183,7 +183,6 @@ function updateForm() {
       let el = document.querySelector(`input[name="${category}.${e}"]`);
       if (el) {
         if (typeof elements[e] === 'boolean'){
-          console.log(elements[e])
           el.checked = elements[e]
         }
         else
