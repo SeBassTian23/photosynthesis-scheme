@@ -69,7 +69,7 @@ export default class Photosynthesis {
         this.#draw = SVG().addTo(this.target).size( this.width, this.height );
         // Add class
         if(this.className)
-          this.#draw.addClass('calendar-heatmap');
+          this.#draw.addClass(this.class);
         // Add css styles
         if(this.style)
           this.#draw.css(style);
