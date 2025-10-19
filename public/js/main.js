@@ -28,13 +28,13 @@ document.querySelector('#settings form').addEventListener("change", (event) => {
     const keys = key.split('.');
 
     // Create category key, if it doesn't exist
-    if( settings[keys[0]] === undefined)
+    if (settings[keys[0]] === undefined)
       settings[keys[0]] = {}
 
     // Add key and value to category
-    if(value === "false" || value === "true" || value === "null")
+    if (value === "false" || value === "true" || value === "null")
       settings[keys[0]][keys[1]] = JSON.parse(value);
-    else if(!isNaN(value) && value.trim() !== '')
+    else if (!isNaN(value) && value.trim() !== '')
       settings[keys[0]][keys[1]] = Number(value);
     else
       settings[keys[0]][keys[1]] = value;
@@ -115,8 +115,12 @@ document.querySelector('#import-json').addEventListener('change', (event) => {
     reader.readAsText(file);
     reader.onload = function () {
       let importedSettings = JSON.parse(reader.result);
+      document.querySelector('#settings form').reset();
+      document.querySelector('#presets-selector').value = '-1';
+      photosynthesis.reset();
       photosynthesis.settings = importedSettings;
       photosynthesis.update();
+      updateForm();
     };
     reader.onerror = function () {
       console.log(reader.error);
@@ -128,6 +132,7 @@ document.querySelector('#presets-selector').addEventListener('change', (event) =
   photosynthesis.reset();
   photosynthesis.applyPreset(event.target.value);
   photosynthesis.update();
+  updateForm();
 });
 
 document.querySelector('#reset-form').addEventListener('click', (event) => {
@@ -135,7 +140,7 @@ document.querySelector('#reset-form').addEventListener('click', (event) => {
   document.querySelector('#settings form').reset();
   document.querySelector('#presets-selector').value = '-1';
   photosynthesis.reset();
-  document.querySelectorAll('#settings .accordion-header input[name$=".show"]').forEach( el => {
+  document.querySelectorAll('#settings .accordion-header input[name$=".show"]').forEach(el => {
     let cat = el.name.split('.')[0];
     el.checked = photosynthesis.settings[cat].show
     el.dispatchEvent(new Event('change', { bubbles: true }))
@@ -170,3 +175,20 @@ document.querySelector('#toggleBtn').addEventListener('click', (event) => {
     event.target.classList.remove('menu-btn-collapsed')
   }
 })
+
+function updateForm() {
+  for (let category in photosynthesis.settings) {
+    let elements = photosynthesis.settings[category]
+    for (let e in elements) {
+      let el = document.querySelector(`input[name="${category}.${e}"]`);
+      if (el) {
+        if (typeof elements[e] === 'boolean'){
+          console.log(elements[e])
+          el.checked = elements[e]
+        }
+        else
+          el.value = elements[e]
+      }
+    }
+  }
+}
