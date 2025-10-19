@@ -35,23 +35,53 @@ export default class Photosynthesis {
   #initialSettings;
   #componentSettings;
   #presets;
-  constructor(width, height) {
-    this.width = width || 1400;
-    this.height = height || 600;
+  #draw;
+  constructor(target, {width = 'auto', height = 'auto', className, style, autoInit = true } = {}) {
+    this.target = target || null;
+    this.width = width == 'auto'? 1400 : width;
+    this.height = height == 'auto'? 600 : height;
+    this.className = className || null;
+    this.style = style || null;
     this.#componentSettings = cloneDeep(settings);
     this.#initialSettings = this.#settingsJSON();
-    this.#settings = this.#initialSettings;
+    this.#settings = cloneDeep(this.#initialSettings);
     this.#menu = menu || {};
     this.#layers = layers || [];
     this.#presets = presets;
+    this.#draw = null;
     this.references = references;
+    autoInit? this.#buildFigure() : null; // Call build immidiately to show an empty 
   }
   build() {
+    this.#buildFigure();
+    return this.#draw.svg();
+  }
+  update() {
+    this.#buildFigure();
+  }
+  #buildFigure() {
 
-    var draw = SVG().size(this.width, this.height);
+    // Init the SVG
+    if(!this.#draw){
+      
+      // Initial dimensions
+      if(this.target && typeof this.target === 'string'){
+        this.#draw = SVG().addTo(this.target).size( this.width, this.height );
+        // Add class
+        if(this.className)
+          this.#draw.addClass('calendar-heatmap');
+        // Add css styles
+        if(this.style)
+          this.#draw.css(style);
+      }
+      else
+        this.#draw = SVG().size( this.width, this.height );
 
-    // Set viewbox
-    draw.viewbox(`0 0 ${this.width} ${this.height}`)
+      // Set viewbox
+      this.#draw.viewbox(0, 0, this.width, this.height )
+    }
+    // Clear content before the next redraw
+    this.#draw.clear()
 
     // Apply options
     for (let i in this.#layers) {
@@ -61,71 +91,68 @@ export default class Photosynthesis {
 
         switch (key) {
           case 'stroma':
-            draw.svg(stroma({ ...options }));
+            this.#draw.svg(stroma({ ...options }));
             break;
           case 'thylakoidmembrane':
-            draw.svg(thylakoidmembrane({ ...options }));
+            this.#draw.svg(thylakoidmembrane({ ...options }));
             break;
           case 'lumen':
-            draw.svg(lumen({ ...options }));
+            this.#draw.svg(lumen({ ...options }));
             break;
           case 'plastoquinone':
-            draw.svg(plastoquinone({ ...options }));
+            this.#draw.svg(plastoquinone({ ...options }));
             break;
           case 'plastocyanin':
-            draw.svg(plastocyanin({ ...options }));
+            this.#draw.svg(plastocyanin({ ...options }));
             break;
           case 'cytochrome-c6':
-            draw.svg(cytochromeC6({ ...options }));
+            this.#draw.svg(cytochromeC6({ ...options }));
             break;
           case 'photosystem-i':
-            draw.svg(photosystemI({ ...options }));
+            this.#draw.svg(photosystemI({ ...options }));
             break;
           case 'atpsynthase':
-            draw.svg(atpsynthase({ ...options }));
+            this.#draw.svg(atpsynthase({ ...options }));
             break;
           case 'photosystem-ii':
-            draw.svg(photosystemII({ ...options }));
+            this.#draw.svg(photosystemII({ ...options }));
             break;
           case 'photosystem-ii-repair':
-            draw.svg(photosystemIIrepair({ ...options }));
+            this.#draw.svg(photosystemIIrepair({ ...options }));
             break;
           case 'cytochrome-b6f':
-            draw.svg(cytochromeB6f({ ...options }));
+            this.#draw.svg(cytochromeB6f({ ...options }));
             break;
           case 'vdx':
-            draw.svg(vdx({ ...options }));
+            this.#draw.svg(vdx({ ...options }));
             break;
           case 'ferredoxin':
-            draw.svg(ferredoxin({ ...options }))
+            this.#draw.svg(ferredoxin({ ...options }))
             break;
           case 'fnr':
-            draw.svg(fnr({ ...options }))
+            this.#draw.svg(fnr({ ...options }))
             break;
           case 'electron-flux':
-            draw.svg(electronFlux({ ...options }))
+            this.#draw.svg(electronFlux({ ...options }))
             break;
           case 'proton-flux':
-            draw.svg(protonFlux({ ...options }))
+            this.#draw.svg(protonFlux({ ...options }))
             break;
           case 'ptox':
-            draw.svg(ptox({ ...options }))
+            this.#draw.svg(ptox({ ...options }))
             break;
           case 'ion-channels':
-            draw.svg(ionChannels({ ...options }))
+            this.#draw.svg(ionChannels({ ...options }))
             break;
           case 'ion-flux':
-            draw.svg(ionFlux({ ...options }))
+            this.#draw.svg(ionFlux({ ...options }))
             break;
           case 'quenching':
-            draw.svg(quenching({ ...options }))
+            this.#draw.svg(quenching({ ...options }))
             break;
         }
       }
     }
-
-    // Final SVG
-    return draw.svg();
   }
   get settingsSave() {
     const current = this.settings;
